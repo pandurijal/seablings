@@ -1,81 +1,177 @@
-import React from 'react';
-import { Twitter, Heart, Repeat } from 'lucide-react';
+import React from "react";
+import { CheckCircle2, Heart, Repeat, MessageCircle, Eye } from "lucide-react";
+import tweetsData from "@/data/tweets.json";
 
-// Mock data to simulate the look and feel of the community feed
-const MOCK_TWEETS = [
-  {
-    user: "Ariya from Bangkok",
-    handle: "@ariya_bkk",
-    content: "The morning light at Wat Arun is magical today. Sending peace to all my ASEAN friends! 🇹🇭✨ Where is everyone else starting their day? #Seablings #ASEAN",
-    time: "10m ago",
-    likes: 124,
-    color: "bg-orange-100 text-orange-700"
-  },
-  {
-    user: "Minh Le",
-    handle: "@minhle_vn",
-    content: "Best Banh Mi in District 1? Just found this tiny stall. Food really brings us together. Come visit Vietnam soon! 🇻🇳🥖 #Seablings",
-    time: "45m ago",
-    likes: 89,
-    color: "bg-blue-100 text-blue-700"
-  },
-  {
-    user: "Rizky",
-    handle: "@rizky_jkt",
-    content: "Rainy afternoon in Jakarta, perfect for reading. Connecting with a friend in KL via #Seablings today. We share so much history! 🇮🇩🤝🇲🇾",
-    time: "2h ago",
-    likes: 432,
-    color: "bg-emerald-100 text-emerald-700"
-  }
-];
+type Tweet = (typeof tweetsData.items)[number];
+
+const rt = new Intl.RelativeTimeFormat("en", { numeric: "auto" });
+
+function relativeTime(iso: string): string {
+  const diffMs = new Date(iso).getTime() - Date.now();
+  const diffSec = Math.round(diffMs / 1000);
+  const abs = Math.abs(diffSec);
+
+  if (abs < 60) return rt.format(diffSec, "second");
+  if (abs < 3600) return rt.format(Math.round(diffSec / 60), "minute");
+  if (abs < 86400) return rt.format(Math.round(diffSec / 3600), "hour");
+  if (abs < 86400 * 30) return rt.format(Math.round(diffSec / 86400), "day");
+  if (abs < 86400 * 365) return rt.format(Math.round(diffSec / (86400 * 30)), "month");
+  return rt.format(Math.round(diffSec / (86400 * 365)), "year");
+}
+
+function formatCount(n: number): string {
+  if (n >= 1_000_000) return `${(n / 1_000_000).toFixed(1).replace(/\.0$/, "")}M`;
+  if (n >= 1_000) return `${(n / 1_000).toFixed(1).replace(/\.0$/, "")}K`;
+  return String(n);
+}
+
+function avatarFallbackColor(name: string): string {
+  const palette = [
+    "bg-orange-100 text-orange-700",
+    "bg-blue-100 text-blue-700",
+    "bg-emerald-100 text-emerald-700",
+    "bg-purple-100 text-purple-700",
+    "bg-rose-100 text-rose-700",
+    "bg-amber-100 text-amber-700",
+    "bg-cyan-100 text-cyan-700",
+    "bg-indigo-100 text-indigo-700",
+  ];
+  let hash = 0;
+  for (let i = 0; i < name.length; i++) hash = (hash * 31 + name.charCodeAt(i)) >>> 0;
+  return palette[hash % palette.length];
+}
+
+function TweetImages({ images }: { images: string[] }) {
+  if (!images || images.length === 0) return null;
+
+  const cols = images.length === 1 ? 1 : 2;
+  const isThree = images.length === 3;
+
+  return (
+    <div
+      className={`mb-4 grid gap-1 rounded-xl overflow-hidden ${
+        cols === 1 ? "grid-cols-1" : "grid-cols-2"
+      }`}
+    >
+      {images.map((src, i) => (
+        <div
+          key={i}
+          className={`block bg-slate-100 ${
+            isThree && i === 0 ? "row-span-2" : ""
+          }`}
+        >
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src={src}
+            alt=""
+            loading="lazy"
+            className="w-full h-full object-cover aspect-square"
+          />
+        </div>
+      ))}
+    </div>
+  );
+}
+
+function TweetCard({ tweet }: { tweet: Tweet }) {
+  const fallback = avatarFallbackColor(tweet.user);
+  const initial = tweet.user.trim()[0]?.toUpperCase() ?? "?";
+
+  return (
+    <a
+      href={tweet.url}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="block bg-white p-6 rounded-xl shadow-sm border border-slate-100 hover:shadow-md hover:border-sea-200 transition-all flex flex-col justify-between"
+    >
+      <div>
+        <div className="flex items-center gap-3 mb-3">
+          <div
+            className={`relative w-10 h-10 rounded-full flex items-center justify-center font-bold text-sm overflow-hidden shrink-0 ${fallback}`}
+          >
+            <span className="relative">{initial}</span>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={tweet.avatar}
+              alt=""
+              loading="lazy"
+              className="absolute inset-0 w-full h-full object-cover"
+            />
+          </div>
+          <div className="min-w-0">
+            <p className="font-semibold text-slate-800 text-sm truncate flex items-center gap-1">
+              <span className="truncate">{tweet.user}</span>
+              {tweet.verified && (
+                <CheckCircle2
+                  className="w-4 h-4 fill-sea-500 text-white shrink-0"
+                  aria-label="Verified"
+                />
+              )}
+            </p>
+            <p className="text-slate-400 text-xs truncate">{tweet.handle}</p>
+          </div>
+        </div>
+
+        <p className="text-slate-600 text-sm leading-relaxed mb-4 whitespace-pre-wrap">
+          {tweet.content}
+        </p>
+
+        <TweetImages images={tweet.images} />
+      </div>
+
+      <div className="flex items-center justify-between text-slate-400 text-xs border-t border-slate-50 pt-3 gap-2">
+        <time
+          dateTime={tweet.postedAt}
+          suppressHydrationWarning
+          className="whitespace-nowrap shrink-0"
+        >
+          {relativeTime(tweet.postedAt)}
+        </time>
+        <div className="flex gap-3">
+          <span className="flex items-center gap-1" title={`${tweet.replies} replies`}>
+            <MessageCircle className="w-3 h-3" /> {formatCount(tweet.replies)}
+          </span>
+          <span className="flex items-center gap-1" title={`${tweet.reposts} reposts`}>
+            <Repeat className="w-3 h-3" /> {formatCount(tweet.reposts)}
+          </span>
+          <span className="flex items-center gap-1" title={`${tweet.likes} likes`}>
+            <Heart className="w-3 h-3" /> {formatCount(tweet.likes)}
+          </span>
+          <span className="flex items-center gap-1" title={`${tweet.views} views`}>
+            <Eye className="w-3 h-3" /> {formatCount(tweet.views)}
+          </span>
+        </div>
+      </div>
+    </a>
+  );
+}
 
 const CommunityFeed: React.FC = () => {
   return (
     <section className="py-24 px-6 bg-sea-600">
-      <div className="max-w-4xl mx-auto">
-        <div className="flex flex-col md:flex-row justify-between items-end mb-12 gap-4">
-          <div>
-            <h2 className="text-3xl font-bold text-white mb-2">What They Say in Social Media</h2>
-            <p className="text-sea-100">Curated social media content mentioning SEAblings.</p>
-          </div>
-          <a 
-            href="https://twitter.com/search?q=%23Seablings" 
-            target="_blank"
-            rel="noreferrer"
-            className="text-white font-medium hover:text-sea-50 flex items-center gap-2 text-sm bg-sea-700/50 hover:bg-sea-700 px-4 py-2 rounded-full transition-colors"
-          >
-            View live feed <Twitter className="w-4 h-4" />
-          </a>
+      <div className="flex flex-col md:flex-row justify-between items-end mb-12 gap-4 max-w-6xl mx-auto">
+        <div>
+          <h2 className="text-3xl font-bold text-white mb-2">
+            What They Say in Social Media
+          </h2>
+          <p className="text-sea-100">
+            Curated social media content mentioning SEAblings.
+          </p>
         </div>
+        <a
+          href="https://twitter.com/search?q=%23Seablings"
+          target="_blank"
+          rel="noreferrer"
+          className="text-white font-medium hover:text-sea-50 flex items-center gap-2 text-sm bg-sea-700/50 hover:bg-sea-700 px-4 py-2 rounded-full transition-colors"
+        >
+          View live feed
+        </a>
+      </div>
 
-        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-          {MOCK_TWEETS.map((tweet, i) => (
-            <div key={i} className="bg-white p-6 rounded-xl shadow-sm border border-slate-100 hover:shadow-md transition-shadow flex flex-col justify-between">
-              <div>
-                <div className="flex items-center gap-3 mb-3">
-                  <div className={`w-10 h-10 rounded-full flex items-center justify-center font-bold text-sm ${tweet.color}`}>
-                    {tweet.user[0]}
-                  </div>
-                  <div>
-                    <p className="font-semibold text-slate-800 text-sm">{tweet.user}</p>
-                    <p className="text-slate-400 text-xs">{tweet.handle}</p>
-                  </div>
-                </div>
-                <p className="text-slate-600 text-sm leading-relaxed mb-4">
-                  {tweet.content}
-                </p>
-              </div>
-              
-              <div className="flex items-center justify-between text-slate-400 text-xs border-t border-slate-50 pt-3">
-                <span>{tweet.time}</span>
-                <div className="flex gap-3">
-                  <span className="flex items-center gap-1 hover:text-red-400 cursor-pointer"><Heart className="w-3 h-3" /> {tweet.likes}</span>
-                  <span className="flex items-center gap-1 hover:text-blue-400 cursor-pointer"><Repeat className="w-3 h-3" /></span>
-                </div>
-              </div>
-            </div>
-          ))}
-        </div>
+      <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+        {tweetsData.items.map((tweet, i) => (
+          <TweetCard key={`${tweet.handle}-${i}`} tweet={tweet} />
+        ))}
       </div>
     </section>
   );
