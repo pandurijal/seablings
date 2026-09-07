@@ -1,8 +1,9 @@
 import React from "react";
 import { CheckCircle2, Heart, Repeat, MessageCircle, Eye } from "lucide-react";
 import tweetsData from "@/data/tweets.json";
+import type { TweetsFile } from "@/types";
 
-type Tweet = (typeof tweetsData.items)[number];
+const data = tweetsData as TweetsFile;
 
 const rt = new Intl.RelativeTimeFormat("en", { numeric: "auto" });
 
@@ -46,6 +47,7 @@ function TweetImages({ images }: { images: string[] }) {
 
   const cols = images.length === 1 ? 1 : 2;
   const isThree = images.length === 3;
+  const aspect = images.length === 1 ? "aspect-video" : "aspect-square";
 
   return (
     <div
@@ -56,7 +58,7 @@ function TweetImages({ images }: { images: string[] }) {
       {images.map((src, i) => (
         <div
           key={i}
-          className={`block bg-slate-100 ${
+          className={`block bg-slate-100 ${aspect} ${
             isThree && i === 0 ? "row-span-2" : ""
           }`}
         >
@@ -65,7 +67,7 @@ function TweetImages({ images }: { images: string[] }) {
             src={src}
             alt=""
             loading="lazy"
-            className="w-full h-full object-cover aspect-square"
+            className="w-full h-full object-cover"
           />
         </div>
       ))}
@@ -73,51 +75,50 @@ function TweetImages({ images }: { images: string[] }) {
   );
 }
 
-function TweetCard({ tweet }: { tweet: Tweet }) {
-  const fallback = avatarFallbackColor(tweet.user);
-  const initial = tweet.user.trim()[0]?.toUpperCase() ?? "?";
+function TweetCard({ tweet }: { tweet: TweetsFile["items"][number] }) {
+  const fallback = avatarFallbackColor(tweet.user.name);
+  const initial = tweet.user.name.trim()[0]?.toUpperCase() ?? "?";
+  const { user, metrics, media } = tweet;
 
   return (
     <a
       href={tweet.url}
       target="_blank"
       rel="noopener noreferrer"
-      className="block bg-white p-6 rounded-xl shadow-sm border border-slate-100 hover:shadow-md hover:border-sea-200 transition-all flex flex-col justify-between"
+      className="block bg-white p-6 rounded-xl shadow-sm border border-slate-100 hover:shadow-md hover:border-sea-200 transition-all"
     >
-      <div>
-        <div className="flex items-center gap-3 mb-3">
-          <div
-            className={`relative w-10 h-10 rounded-full flex items-center justify-center font-bold text-sm overflow-hidden shrink-0 ${fallback}`}
-          >
-            <span className="relative">{initial}</span>
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
-              src={tweet.avatar}
-              alt=""
-              loading="lazy"
-              className="absolute inset-0 w-full h-full object-cover"
-            />
-          </div>
-          <div className="min-w-0">
-            <p className="font-semibold text-slate-800 text-sm truncate flex items-center gap-1">
-              <span className="truncate">{tweet.user}</span>
-              {tweet.verified && (
-                <CheckCircle2
-                  className="w-4 h-4 fill-sea-500 text-white shrink-0"
-                  aria-label="Verified"
-                />
-              )}
-            </p>
-            <p className="text-slate-400 text-xs truncate">{tweet.handle}</p>
-          </div>
+      <div className="flex items-center gap-3 mb-3">
+        <div
+          className={`relative w-10 h-10 rounded-full flex items-center justify-center font-bold text-sm overflow-hidden shrink-0 ${fallback}`}
+        >
+          <span className="relative">{initial}</span>
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src={user.avatar}
+            alt=""
+            loading="lazy"
+            className="absolute inset-0 w-full h-full object-cover"
+          />
         </div>
-
-        <p className="text-slate-600 text-sm leading-relaxed mb-4 whitespace-pre-wrap">
-          {tweet.content}
-        </p>
-
-        <TweetImages images={tweet.images} />
+        <div className="min-w-0">
+          <p className="font-semibold text-slate-800 text-sm truncate flex items-center gap-1">
+            <span className="truncate">{user.name}</span>
+            {user.verified && (
+              <CheckCircle2
+                className="w-4 h-4 fill-sea-500 text-white shrink-0"
+                aria-label="Verified"
+              />
+            )}
+          </p>
+          <p className="text-slate-400 text-xs truncate">{user.handle}</p>
+        </div>
       </div>
+
+      <p className="text-slate-600 text-sm leading-relaxed mb-4 whitespace-pre-wrap">
+        {tweet.content}
+      </p>
+
+      <TweetImages images={media.images} />
 
       <div className="flex items-center justify-between text-slate-400 text-xs border-t border-slate-50 pt-3 gap-2">
         <time
@@ -128,17 +129,17 @@ function TweetCard({ tweet }: { tweet: Tweet }) {
           {relativeTime(tweet.postedAt)}
         </time>
         <div className="flex gap-3">
-          <span className="flex items-center gap-1" title={`${tweet.replies} replies`}>
-            <MessageCircle className="w-3 h-3" /> {formatCount(tweet.replies)}
+          <span className="flex items-center gap-1" title={`${metrics.replies} replies`}>
+            <MessageCircle className="w-3 h-3" /> {formatCount(metrics.replies)}
           </span>
-          <span className="flex items-center gap-1" title={`${tweet.reposts} reposts`}>
-            <Repeat className="w-3 h-3" /> {formatCount(tweet.reposts)}
+          <span className="flex items-center gap-1" title={`${metrics.reposts} reposts`}>
+            <Repeat className="w-3 h-3" /> {formatCount(metrics.reposts)}
           </span>
-          <span className="flex items-center gap-1" title={`${tweet.likes} likes`}>
-            <Heart className="w-3 h-3" /> {formatCount(tweet.likes)}
+          <span className="flex items-center gap-1" title={`${metrics.likes} likes`}>
+            <Heart className="w-3 h-3" /> {formatCount(metrics.likes)}
           </span>
-          <span className="flex items-center gap-1" title={`${tweet.views} views`}>
-            <Eye className="w-3 h-3" /> {formatCount(tweet.views)}
+          <span className="flex items-center gap-1" title={`${metrics.views} views`}>
+            <Eye className="w-3 h-3" /> {formatCount(metrics.views)}
           </span>
         </div>
       </div>
@@ -149,28 +150,30 @@ function TweetCard({ tweet }: { tweet: Tweet }) {
 const CommunityFeed: React.FC = () => {
   return (
     <section className="py-24 px-6 bg-sea-600">
-      <div className="flex flex-col md:flex-row justify-between items-end mb-12 gap-4 max-w-6xl mx-auto">
-        <div>
-          <h2 className="text-3xl font-bold text-white mb-2">
-            What They Say in Social Media
-          </h2>
-          <p className="text-sea-100">
-            Curated social media content mentioning SEAblings.
-          </p>
+      <div className="max-w-3xl mx-auto mb-12">
+        <div className="flex flex-col md:flex-row justify-between items-start md:items-end gap-4">
+          <div>
+            <h2 className="text-3xl font-bold text-white mb-2">
+              What They Say in Social Media
+            </h2>
+            <p className="text-sea-100">
+              Curated social media content mentioning SEAblings.
+            </p>
+          </div>
+          <a
+            href="https://twitter.com/search?q=%23Seablings"
+            target="_blank"
+            rel="noreferrer"
+            className="text-white font-medium hover:text-sea-50 flex items-center gap-2 text-sm bg-sea-700/50 hover:bg-sea-700 px-4 py-2 rounded-full transition-colors shrink-0"
+          >
+            View live feed
+          </a>
         </div>
-        <a
-          href="https://twitter.com/search?q=%23Seablings"
-          target="_blank"
-          rel="noreferrer"
-          className="text-white font-medium hover:text-sea-50 flex items-center gap-2 text-sm bg-sea-700/50 hover:bg-sea-700 px-4 py-2 rounded-full transition-colors"
-        >
-          View live feed
-        </a>
       </div>
 
-      <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-        {tweetsData.items.map((tweet, i) => (
-          <TweetCard key={`${tweet.handle}-${i}`} tweet={tweet} />
+      <div className="max-w-3xl mx-auto space-y-6">
+        {data.items.map((tweet) => (
+          <TweetCard key={tweet.id} tweet={tweet} />
         ))}
       </div>
     </section>
