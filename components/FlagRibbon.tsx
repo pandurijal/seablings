@@ -16,9 +16,10 @@ const ASEAN_FLAGS: FlagEntry[] = [
   { name: "Vietnam", src: "/flags/flag-vietnam.svg" },
 ];
 
-export default function FlagRibbon() {
-  const looped = [...ASEAN_FLAGS, ...ASEAN_FLAGS];
+const REPEAT = 3;
+const looped = Array.from({ length: REPEAT }, () => ASEAN_FLAGS).flat();
 
+export default function FlagRibbon() {
   return (
     <section
       aria-label="ASEAN member nations"
@@ -26,11 +27,11 @@ export default function FlagRibbon() {
     >
       <div
         aria-hidden="true"
-        className="pointer-events-none absolute inset-y-0 left-0 w-16 bg-gradient-to-r from-white/90 to-transparent z-10"
+        className="pointer-events-none absolute inset-y-0 left-0 w-10 bg-gradient-to-r from-white/95 to-transparent z-10"
       />
       <div
         aria-hidden="true"
-        className="pointer-events-none absolute inset-y-0 right-0 w-16 bg-gradient-to-l from-white/90 to-transparent z-10"
+        className="pointer-events-none absolute inset-y-0 right-0 w-10 bg-gradient-to-l from-white/95 to-transparent z-10"
       />
 
       <div
@@ -41,15 +42,15 @@ export default function FlagRibbon() {
           <div
             key={`${flag.name}-${i}`}
             role="listitem"
-            className="flex items-center gap-3 px-7 py-3 shrink-0"
+            className="flex items-center gap-2.5 px-5 py-3 shrink-0"
           >
             <img
               src={flag.src}
               alt={flag.name}
-              width={30}
-              height={20}
+              width={32}
+              height={22}
               loading="lazy"
-              className="h-5 w-auto rounded-[2px] shadow-sm ring-1 ring-slate-200/70 object-cover"
+              className="h-[22px] w-auto rounded-[2px] shadow-sm ring-1 ring-slate-200/70 object-cover"
             />
             <span className="text-sm font-medium text-slate-700 whitespace-nowrap tracking-tight">
               {flag.name}
