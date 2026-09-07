@@ -1,0 +1,145 @@
+# Seablings
+
+> A minimal solidarity platform connecting Southeast Asia through acts of kindness and shared awareness.
+
+Seablings is a single-page community site celebrating the ten ASEAN member nations. Visitors land on a hero, see all ten national flags slowly scroll by, browse a live news ticker sourced via Google Gemini, and find ways to contribute.
+
+The project started as a Vite + React app and was migrated to Next.js 15 with full SEO infrastructure, server-side AI integration, and a PWA manifest.
+
+## Features
+
+- **ASEAN flag ribbon** — all ten member nation flags scroll continuously (SVG from Wikimedia Commons)
+- **Live news ticker** — generated server-side via Google Gemini (`/api/news`)
+- **SEO-ready** — sitemap, robots.txt, Open Graph image, Twitter cards, JSON-LD organization markup, canonical URL
+- **PWA manifest** — installable, themed for light and dark
+- **Self-hosted fonts** — Inter via `next/font/google`
+- **Accessible** — semantic HTML, ARIA labels, `prefers-reduced-motion` respected, keyboard-friendly
+
+## Tech stack
+
+| Layer       | Choice                              |
+| ----------- | ----------------------------------- |
+| Framework   | Next.js 15 (App Router)             |
+| Runtime     | React 19, TypeScript                |
+| Styling     | Tailwind CSS 3 (custom palettes)    |
+| Icons       | lucide-react                        |
+| AI          | `@google/genai` (Gemini 2.5 Flash)  |
+| Fonts       | `next/font/google` (Inter)          |
+
+## Getting started
+
+### Prerequisites
+
+- Node.js 20 or newer
+- npm 10+ (pnpm or yarn also work)
+
+### Install
+
+```bash
+npm install
+```
+
+### Configure
+
+Copy the example env file and add your Gemini API key:
+
+```bash
+cp .env.local.example .env.local
+```
+
+`.env.local`:
+
+```
+NEXT_PUBLIC_SITE_URL=https://your-domain.com
+GEMINI_API_KEY=your_gemini_api_key_here
+```
+
+Get a Gemini key at <https://aistudio.google.com/apikey>.
+
+### Develop
+
+```bash
+npm run dev      # http://localhost:3000
+```
+
+### Build
+
+```bash
+npm run build
+npm start
+```
+
+## Project layout
+
+```
+.
+├── app/                       # Next.js App Router
+│   ├── api/news/route.ts      # Gemini news endpoint
+│   ├── icon.tsx               # 64x64 favicon (SEA wordmark)
+│   ├── apple-icon.tsx         # 180x180 Apple touch icon
+│   ├── opengraph-image.tsx    # 1200x630 OG card
+│   ├── layout.tsx             # Root layout, metadata, JSON-LD
+│   ├── page.tsx               # Homepage
+│   ├── globals.css            # Tailwind directives + custom CSS
+│   ├── manifest.ts            # PWA manifest
+│   ├── robots.ts              # robots.txt
+│   └── sitemap.ts             # sitemap.xml
+├── components/                # React components
+│   ├── Hero.tsx               # "use client" — onClick scroll handler
+│   ├── FlagRibbon.tsx         # Scrolling ASEAN flag ribbon
+│   ├── HowItWorks.tsx
+│   ├── CommunityFeed.tsx
+│   ├── Contribute.tsx
+│   ├── Footer.tsx             # "use client" — Date hydration
+│   └── JsonLd.tsx
+├── public/flags/              # 10 ASEAN member flag SVGs
+├── services/
+│   └── geminiService.ts       # server-only Gemini fetcher
+├── types.ts                   # Shared TypeScript types
+├── tailwind.config.ts         # sea/kelp palette, animations
+└── next.config.mjs
+```
+
+## Environment variables
+
+| Name                   | Required   | Purpose                                                          |
+| ---------------------- | ---------- | ---------------------------------------------------------------- |
+| `NEXT_PUBLIC_SITE_URL` | Yes (prod) | Public site URL — drives canonical, sitemap, OG, JSON-LD         |
+| `GEMINI_API_KEY`       | For news   | Server-side key for `/api/news` route                            |
+
+Without `GEMINI_API_KEY`, the news endpoint returns an empty array and the rest of the site works as expected.
+
+## Deployment
+
+### Vercel (recommended)
+
+Import the GitHub repo in Vercel. Add `NEXT_PUBLIC_SITE_URL` and `GEMINI_API_KEY` under Environment Variables. Vercel auto-detects Next.js — no extra config needed.
+
+### Other hosts
+
+Any Node.js host with Next.js support will work. Run `npm run build && npm start`.
+
+## Customizing
+
+- **Brand colors** — `tailwind.config.ts` defines `sea` and `kelp` palettes; tweak hex values to rebrand
+- **ASEAN flags** — drop new SVGs into `public/flags/` and add entries to `ASEAN_FLAGS` in `components/FlagRibbon.tsx`
+- **Metadata** — `app/layout.tsx` exports a `Metadata` object; `app/sitemap.ts` and `app/robots.ts` read `NEXT_PUBLIC_SITE_URL`
+
+## Scripts
+
+| Command          | What it does                  |
+| ---------------- | ----------------------------- |
+| `npm run dev`    | Dev server with HMR           |
+| `npm run build`  | Production build              |
+| `npm start`      | Serve the production build    |
+| `npm run lint`   | Next.js + ESLint              |
+
+## Attribution
+
+- Flag SVGs sourced from [Wikimedia Commons](https://commons.wikimedia.org/) under their respective licenses
+- AI news headlines generated by [Google Gemini](https://aistudio.google.com/) — verify before publishing
+- Inter font self-hosted via `next/font/google`
+
+## License
+
+Open source. Non-profit community initiative.
