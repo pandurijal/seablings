@@ -167,7 +167,7 @@ const CommunityFeed: React.FC = () => {
         </div>
       </div>
 
-      <div className="px-2 grid gap-4 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+      <div className="px-2 grid gap-4 grid-cols-1 md:grid-cols-[repeat(auto-fit,minmax(min(100%,280px),1fr))]">
         {data.items.map((tweet) => (
           <TweetCard key={tweet.id} tweet={tweet} />
         ))}
