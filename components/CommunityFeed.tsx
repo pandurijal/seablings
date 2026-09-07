@@ -50,14 +50,14 @@ function TweetImages({ images }: { images: string[] }) {
 
   return (
     <div
-      className={`mb-4 grid gap-1 rounded-xl overflow-hidden ${
+      className={`mb-3 grid gap-1 rounded-xl overflow-hidden max-h-48 ${
         cols === 1 ? "grid-cols-1" : "grid-cols-2"
       }`}
     >
       {images.map((src, i) => (
         <div
           key={i}
-          className={`block bg-slate-100 aspect-square ${
+          className={`bg-slate-100 aspect-video ${
             isThree && i === 0 ? "row-span-2" : ""
           }`}
         >
@@ -146,25 +146,21 @@ function TweetCard({ tweet }: { tweet: TweetsFile["items"][number] }) {
 const CommunityFeed: React.FC = () => {
   return (
     <section className="py-24 px-6 bg-sea-600">
-      <div className="mb-12 px-2">
-        <div className="flex flex-col md:flex-row justify-between items-start md:items-end gap-4 max-w-7xl">
-          <div>
-            <h2 className="text-3xl font-bold text-white mb-2">
-              What They Say in Social Media
-            </h2>
-            <p className="text-sea-100">
-              Curated social media content mentioning SEAblings.
-            </p>
-          </div>
-          <a
-            href="https://twitter.com/search?q=%23Seablings"
-            target="_blank"
-            rel="noreferrer"
-            className="text-white font-medium hover:text-sea-50 flex items-center gap-2 text-sm bg-sea-700/50 hover:bg-sea-700 px-4 py-2 rounded-full transition-colors shrink-0"
-          >
-            View live feed
-          </a>
-        </div>
+      <div className="mb-12 px-2 text-center">
+        <h2 className="text-3xl font-bold text-white mb-2">
+          What They Say in Social Media
+        </h2>
+        <p className="text-sea-100">
+          Curated social media content mentioning SEAblings.
+        </p>
+        <a
+          href="https://twitter.com/search?q=%23Seablings"
+          target="_blank"
+          rel="noreferrer"
+          className="inline-flex items-center gap-2 mt-5 text-white font-medium hover:text-sea-50 text-sm bg-sea-700/50 hover:bg-sea-700 px-4 py-2 rounded-full transition-colors"
+        >
+          View live feed
+        </a>
       </div>
 
       <div className="px-2 grid gap-4 grid-cols-1 md:grid-cols-[repeat(auto-fit,minmax(min(100%,280px),1fr))]">
