@@ -1,5 +1,7 @@
+"use client";
+
 import React from 'react';
-import { Twitter, ArrowRight, Mail } from 'lucide-react';
+import { Mail } from 'lucide-react';
 
 const Footer: React.FC = () => {
   return (
