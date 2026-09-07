@@ -1,6 +1,7 @@
 "use client";
 
 import React from 'react';
+import Link from 'next/link';
 import { Mail } from 'lucide-react';
 
 const Footer: React.FC = () => {
@@ -13,8 +14,8 @@ const Footer: React.FC = () => {
                 <Mail className="w-3 h-3" /> hello@seablings.org
             </a>
             <span className="hidden md:inline text-slate-300">|</span>
-            <a href="#" className="hover:text-slate-600">Privacy</a>
-            <a href="#" className="hover:text-slate-600">Terms</a>
+            <Link href="/privacy" className="hover:text-slate-600">Privacy</Link>
+            <Link href="/terms" className="hover:text-slate-600">Terms</Link>
         </div>
       </div>
     </footer>
