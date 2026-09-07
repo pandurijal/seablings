@@ -33,6 +33,9 @@ yarn-error.log*
 # Vercel
 .vercel
 
+# Playwright artifacts
+.playwright-mcp/
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json

@@ -34,11 +34,16 @@ const config: Config = {
       },
       animation: {
         float: "float 6s ease-in-out infinite",
+        marquee: "marquee 60s linear infinite",
       },
       keyframes: {
         float: {
           "0%, 100%": { transform: "translateY(0)" },
           "50%": { transform: "translateY(-10px)" },
+        },
+        marquee: {
+          from: { transform: "translateX(0)" },
+          to: { transform: "translateX(-50%)" },
         },
       },
     },

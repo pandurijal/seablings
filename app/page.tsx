@@ -1,3 +1,4 @@
+import FlagRibbon from "@/components/FlagRibbon";
 import Hero from "@/components/Hero";
 import HowItWorks from "@/components/HowItWorks";
 import CommunityFeed from "@/components/CommunityFeed";
@@ -21,14 +22,16 @@ export default function HomePage() {
         </div>
       </nav>
 
-      <main>
-        <Hero />
-        <HowItWorks />
-        <CommunityFeed />
-        <Contribute />
-      </main>
-
-      <Footer />
+      <div className="pt-20">
+        <FlagRibbon />
+        <main>
+          <Hero />
+          <HowItWorks />
+          <CommunityFeed />
+          <Contribute />
+        </main>
+        <Footer />
+      </div>
     </div>
   );
 }
