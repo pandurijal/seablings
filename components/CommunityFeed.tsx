@@ -1,5 +1,5 @@
 import React from "react";
-import { CheckCircle2, Heart, Repeat, MessageCircle, Eye } from "lucide-react";
+import { CheckCircle2, Heart, Repeat, MessageCircle } from "lucide-react";
 import tweetsData from "@/data/tweets.json";
 import type { TweetsFile } from "@/types";
 
@@ -47,7 +47,6 @@ function TweetImages({ images }: { images: string[] }) {
 
   const cols = images.length === 1 ? 1 : 2;
   const isThree = images.length === 3;
-  const aspect = images.length === 1 ? "aspect-video" : "aspect-square";
 
   return (
     <div
@@ -58,7 +57,7 @@ function TweetImages({ images }: { images: string[] }) {
       {images.map((src, i) => (
         <div
           key={i}
-          className={`block bg-slate-100 ${aspect} ${
+          className={`block bg-slate-100 aspect-square ${
             isThree && i === 0 ? "row-span-2" : ""
           }`}
         >
@@ -138,9 +137,6 @@ function TweetCard({ tweet }: { tweet: TweetsFile["items"][number] }) {
           <span className="flex items-center gap-1" title={`${metrics.likes} likes`}>
             <Heart className="w-3 h-3" /> {formatCount(metrics.likes)}
           </span>
-          <span className="flex items-center gap-1" title={`${metrics.views} views`}>
-            <Eye className="w-3 h-3" /> {formatCount(metrics.views)}
-          </span>
         </div>
       </div>
     </a>
@@ -150,8 +146,8 @@ function TweetCard({ tweet }: { tweet: TweetsFile["items"][number] }) {
 const CommunityFeed: React.FC = () => {
   return (
     <section className="py-24 px-6 bg-sea-600">
-      <div className="max-w-3xl mx-auto mb-12">
-        <div className="flex flex-col md:flex-row justify-between items-start md:items-end gap-4">
+      <div className="mb-12 px-2">
+        <div className="flex flex-col md:flex-row justify-between items-start md:items-end gap-4 max-w-7xl">
           <div>
             <h2 className="text-3xl font-bold text-white mb-2">
               What They Say in Social Media
@@ -171,7 +167,7 @@ const CommunityFeed: React.FC = () => {
         </div>
       </div>
 
-      <div className="max-w-3xl mx-auto space-y-6">
+      <div className="px-2 grid gap-4 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
         {data.items.map((tweet) => (
           <TweetCard key={tweet.id} tweet={tweet} />
         ))}
