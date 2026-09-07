@@ -1,0 +1,75 @@
+{
+  "updatedAt": "2026-09-07",
+  "items": [
+    {
+      "country": "Indonesia",
+      "headline": "Jakarta's MRT Phase 2 extension opens, cutting cross-city travel time by 40%.",
+      "source": "Jakarta Post",
+      "url": "https://www.thejakartapost.com/",
+      "date": "2026-09-05"
+    },
+    {
+      "country": "Malaysia",
+      "headline": "Kuala Lumpur to host the ASEAN Digital Ministers' Meeting in October.",
+      "source": "Malaysiakini",
+      "url": "https://www.malaysiakini.com/",
+      "date": "2026-09-04"
+    },
+    {
+      "country": "Thailand",
+      "headline": "Bangkok launches river-cleanup drive with 5,000 community volunteers.",
+      "source": "Bangkok Post",
+      "url": "https://www.bangkokpost.com/",
+      "date": "2026-09-03"
+    },
+    {
+      "country": "Vietnam",
+      "headline": "Hanoi opens first public electric bus route, part of a 10-year green transit plan.",
+      "source": "VnExpress",
+      "url": "https://vnexpress.net/",
+      "date": "2026-09-02"
+    },
+    {
+      "country": "Philippines",
+      "headline": "Cebu student-built reef restoration project wins regional sustainability award.",
+      "source": "Rappler",
+      "url": "https://www.rappler.com/",
+      "date": "2026-09-01"
+    },
+    {
+      "country": "Singapore",
+      "headline": "Singapore and Johor Bahru launch joint cross-border digital payment system.",
+      "source": "The Straits Times",
+      "url": "https://www.straitstimes.com/",
+      "date": "2026-08-31"
+    },
+    {
+      "country": "Brunei",
+      "headline": "Bandar Seri Begawan's weekend car-free zone doubles in size after pilot success.",
+      "source": "Borneo Bulletin",
+      "url": "https://borneobulletin.com.bn/",
+      "date": "2026-08-30"
+    },
+    {
+      "country": "Cambodia",
+      "headline": "Phnom Penh's riverside community library network expands to 20 new districts.",
+      "source": "Khmer Times",
+      "url": "https://www.khmertimeskh.com/",
+      "date": "2026-08-29"
+    },
+    {
+      "country": "Laos",
+      "headline": "Vientiane startup hub opens with mentorship from Singapore and Thai founders.",
+      "source": "The Laotian Times",
+      "url": "https://laotiantimes.com/",
+      "date": "2026-08-28"
+    },
+    {
+      "country": "Myanmar",
+      "headline": "Yangon community radio reaches 1M listeners with bilingual storytelling program.",
+      "source": "Frontier Myanmar",
+      "url": "https://www.frontiermyanmar.net/",
+      "date": "2026-08-27"
+    }
+  ]
+}
