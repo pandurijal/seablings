@@ -1,7 +1,7 @@
 "use client";
 
 import React from 'react';
-import { ArrowRight, Twitter } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 
 const Hero: React.FC = () => {
   const scrollToHow = () => {
@@ -34,23 +34,13 @@ const Hero: React.FC = () => {
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-4">
-          <button 
+          <button
             onClick={scrollToHow}
             className="group relative px-8 py-3.5 bg-slate-900 text-white font-medium rounded-full shadow-lg hover:shadow-xl hover:bg-slate-800 transition-all transform hover:-translate-y-0.5"
           >
             Explore News
             <ArrowRight className="inline-block ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
           </button>
-          
-          <a 
-            href="https://twitter.com/search?q=%23Seablings" 
-            target="_blank" 
-            rel="noopener noreferrer"
-            className="px-8 py-3.5 bg-white text-slate-700 border border-slate-200 font-medium rounded-full shadow-sm hover:bg-slate-50 transition-all flex items-center gap-2"
-          >
-            <Twitter className="w-4 h-4 text-sea-500" />
-            <span>Follow #Seablings</span>
-          </a>
         </div>
       </div>
       
