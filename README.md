@@ -9,7 +9,8 @@ The project started as a Vite + React app and was migrated to Next.js 15 with fu
 ## Features
 
 - **ASEAN flag ribbon** — all ten member nation flags scroll continuously (SVG from Wikimedia Commons)
-- **Live news ticker** — generated server-side via Google Gemini (`/api/news`)
+- **Curated news ticker** — 10 hand-picked headlines, one per ASEAN country, from `data/news.json`
+- **Submission form** — visitors can submit stories, volunteer inquiries, or partnership requests, stored in Postgres (Neon)
 - **SEO-ready** — sitemap, robots.txt, Open Graph image, Twitter cards, JSON-LD organization markup, canonical URL
 - **PWA manifest** — installable, themed for light and dark
 - **Self-hosted fonts** — Inter via `next/font/google`
@@ -52,9 +53,20 @@ cp .env.local.example .env.local
 ```
 NEXT_PUBLIC_SITE_URL=https://your-domain.com
 GEMINI_API_KEY=your_gemini_api_key_here
+DATABASE_URL=postgresql://user:password@host.neon.tech/dbname?sslmode=require
 ```
 
-Get a Gemini key at <https://aistudio.google.com/apikey>.
+Get a Gemini key at <https://aistudio.google.com/apikey>. For the database, create a free project at <https://neon.tech> and copy the **pooled** connection string.
+
+### Database setup
+
+Run the schema once in the Neon SQL editor before going live:
+
+```bash
+psql "$DATABASE_URL" -f db/schema.sql
+```
+
+or paste the contents of `db/schema.sql` into the Neon console.
 
 ### Develop
 
@@ -74,7 +86,8 @@ npm start
 ```
 .
 ├── app/                       # Next.js App Router
-│   ├── api/news/route.ts      # Gemini news endpoint
+│   ├── api/news/route.ts      # Gemini news endpoint (unused — kept for future live data)
+│   ├── api/submissions/route.ts # Stores form submissions in Postgres
 │   ├── icon.tsx               # 64x64 favicon (SEA wordmark)
 │   ├── apple-icon.tsx         # 180x180 Apple touch icon
 │   ├── opengraph-image.tsx    # 1200x630 OG card
@@ -89,9 +102,16 @@ npm start
 │   ├── FlagRibbon.tsx         # Scrolling ASEAN flag ribbon
 │   ├── HowItWorks.tsx
 │   ├── CommunityFeed.tsx
-│   ├── Contribute.tsx
+│   ├── Contribute.tsx         # Hosts the submission form
+│   ├── SubmissionForm.tsx     # "use client" — controlled form, posts to /api/submissions
 │   ├── Footer.tsx             # "use client" — Date hydration
 │   └── JsonLd.tsx
+├── data/
+│   └── news.json              # 10 curated ASEAN news items
+├── db/
+│   └── schema.sql             # Postgres schema — run once in Neon SQL editor
+├── lib/
+│   └── db.ts                  # Singleton Neon serverless client
 ├── public/flags/              # 10 ASEAN member flag SVGs
 ├── services/
 │   └── geminiService.ts       # server-only Gemini fetcher
@@ -105,9 +125,10 @@ npm start
 | Name                   | Required   | Purpose                                                          |
 | ---------------------- | ---------- | ---------------------------------------------------------------- |
 | `NEXT_PUBLIC_SITE_URL` | Yes (prod) | Public site URL — drives canonical, sitemap, OG, JSON-LD         |
-| `GEMINI_API_KEY`       | For news   | Server-side key for `/api/news` route                            |
+| `DATABASE_URL`         | For forms  | Neon pooled Postgres connection — backs the submission form      |
+| `GEMINI_API_KEY`       | Optional   | Currently unused (news now reads from `data/news.json`)          |
 
-Without `GEMINI_API_KEY`, the news endpoint returns an empty array and the rest of the site works as expected.
+Without `DATABASE_URL`, the submission form returns a 500 error (visible to the user); the rest of the site works fine.
 
 ## Deployment
 
