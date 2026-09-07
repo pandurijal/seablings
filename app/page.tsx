@@ -22,16 +22,15 @@ export default function HomePage() {
         </div>
       </nav>
 
-      <div className="pt-20">
+      <main>
+        <Hero />
         <FlagRibbon />
-        <main>
-          <Hero />
-          <HowItWorks />
-          <CommunityFeed />
-          <Contribute />
-        </main>
-        <Footer />
-      </div>
+        <HowItWorks />
+        <CommunityFeed />
+        <Contribute />
+      </main>
+
+      <Footer />
     </div>
   );
 }
