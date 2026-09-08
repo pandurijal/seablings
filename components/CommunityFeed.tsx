@@ -84,7 +84,7 @@ function TweetCard({ tweet }: { tweet: TweetsFile["items"][number] }) {
       href={tweet.url}
       target="_blank"
       rel="noopener noreferrer"
-      className="block bg-white p-6 rounded-xl shadow-sm border border-slate-100 hover:shadow-md hover:border-sea-200 transition-all"
+      className="flex flex-col h-full bg-white p-6 rounded-xl shadow-sm border border-slate-100 hover:shadow-md hover:border-sea-200 transition-all"
     >
       <div className="flex items-center gap-3 mb-3">
         <div
@@ -119,7 +119,7 @@ function TweetCard({ tweet }: { tweet: TweetsFile["items"][number] }) {
 
       <TweetImages images={media.images} />
 
-      <div className="flex items-center justify-between text-slate-400 text-xs border-t border-slate-50 pt-3 gap-2">
+      <div className="mt-auto pt-3 border-t border-slate-50 flex items-center justify-between text-slate-400 text-xs gap-2">
         <time
           dateTime={tweet.postedAt}
           suppressHydrationWarning
