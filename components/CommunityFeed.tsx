@@ -84,7 +84,7 @@ function TweetCard({ tweet }: { tweet: TweetsFile["items"][number] }) {
       href={tweet.url}
       target="_blank"
       rel="noopener noreferrer"
-      className="flex flex-col h-full bg-white p-6 rounded-xl shadow-sm border border-slate-100 hover:shadow-md hover:border-sea-200 transition-all"
+      className="flex flex-col bg-white p-6 rounded-xl shadow-sm border border-slate-100 hover:shadow-md hover:border-sea-200 transition-all"
     >
       <div className="flex items-center gap-3 mb-3">
         <div
@@ -163,9 +163,11 @@ const CommunityFeed: React.FC = () => {
         </a>
       </div>
 
-      <div className="px-2 grid gap-4 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+      <div className="px-2 columns-1 sm:columns-2 md:columns-3 lg:columns-4 gap-4">
         {data.items.map((tweet) => (
-          <TweetCard key={tweet.id} tweet={tweet} />
+          <div key={tweet.id} className="mb-4 break-inside-avoid">
+            <TweetCard tweet={tweet} />
+          </div>
         ))}
       </div>
     </section>
