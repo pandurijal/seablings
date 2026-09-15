@@ -1,21 +1,20 @@
 "use client";
 
 import { useEffect, useState, type FormEvent } from "react";
+import { countries } from "@/types";
 
-const ASEAN_COUNTRIES = [
-  "Brunei",
-  "Cambodia",
-  "Indonesia",
-  "Laos",
-  "Malaysia",
-  "Myanmar",
-  "Philippines",
-  "Singapore",
-  "Thailand",
-  "Vietnam",
+// Derive country options and slug→name map from data/countries.json
+// so there's a single source of truth.
+const FORM_COUNTRY_OPTIONS = [
+  ...countries.map((c) => c.slug.charAt(0).toUpperCase() + c.slug.slice(1)),
   "Other",
   "Prefer not to say",
 ];
+const SLUG_TO_COUNTRY_NAME: Record<string, string> = Object.fromEntries(
+  countries.map((c) => [c.slug, c.slug.charAt(0).toUpperCase() + c.slug.slice(1)])
+);
+
+const VALID_TYPES = new Set(["general", "story", "volunteer", "partnership"]);
 
 const CATEGORIES = [
   { value: "general", label: "Just saying hi / general" },
@@ -57,6 +56,25 @@ export default function SubmissionForm({ onSuccess }: SubmissionFormProps = {}) 
       return () => clearTimeout(timer);
     }
   }, [status, onSuccess]);
+
+  useEffect(() => {
+    if (typeof window === "undefined") return;
+    const params = new URLSearchParams(window.location.search);
+    const countrySlug = params.get("country");
+    const type = params.get("type");
+
+    setForm((prev) => {
+      const next = { ...prev };
+      if (countrySlug) {
+        const name = SLUG_TO_COUNTRY_NAME[countrySlug.toLowerCase()];
+        if (name && next.country !== name) next.country = name;
+      }
+      if (type && VALID_TYPES.has(type)) {
+        if (next.category !== type) next.category = type;
+      }
+      return next;
+    });
+  }, []);
 
   const update =
     <K extends keyof FormState>(key: K) =>
@@ -167,7 +185,7 @@ export default function SubmissionForm({ onSuccess }: SubmissionFormProps = {}) 
             disabled={status === "submitting"}
           >
             <option value="">Select your country</option>
-            {ASEAN_COUNTRIES.map((c) => (
+            {FORM_COUNTRY_OPTIONS.map((c) => (
               <option key={c} value={c}>
                 {c}
               </option>
