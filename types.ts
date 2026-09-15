@@ -54,3 +54,53 @@ export interface TweetsFile {
   updatedAt: string;
   items: Tweet[];
 }
+
+export type VerificationStatus = "verified" | "unverified";
+
+export interface NGO {
+  name: string;
+  url: string;
+  focus: string;
+  verificationStatus: VerificationStatus;
+}
+
+export interface WayToHelp {
+  title: string;
+  description: string;
+}
+
+export interface CountrySource {
+  label: string;
+  url: string;
+}
+
+export interface Country {
+  slug: string;
+  name: string;
+  iso2: string;
+  iso3: string;
+  capital: string;
+  region: string;
+  population: number;
+  area_km2: number;
+  languages: string[];
+  currency: string;
+  flagSrc: string;
+  heroHeadline: string;
+  overview: string;
+  waysToHelp: WayToHelp[];
+  ngos: NGO[];
+  relatedCountries: string[];
+  sources: CountrySource[];
+}
+
+export interface CountriesData {
+  countries: Country[];
+}
+
+import countriesData from "@/data/countries.json";
+
+export const countries: Country[] = (countriesData as CountriesData).countries;
+export const getCountryBySlug = (slug: string): Country | undefined =>
+  countries.find((c) => c.slug === slug);
+export const getAllCountrySlugs = (): string[] => countries.map((c) => c.slug);

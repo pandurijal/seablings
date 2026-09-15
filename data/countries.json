@@ -1,0 +1,694 @@
+{
+  "countries": [
+    {
+      "slug": "brunei",
+      "name": "Brunei Darussalam",
+      "iso2": "BN",
+      "iso3": "BRN",
+      "capital": "Bandar Seri Begawan",
+      "region": "Maritime Southeast Asia",
+      "population": 500000,
+      "area_km2": 5765,
+      "languages": ["Malay", "English"],
+      "currency": "BND",
+      "flagSrc": "/flags/flag-brunei.svg",
+      "heroHeadline": "Small in size, generous in community-led solidarity",
+      "overview": "Brunei Darussalam is the tiniest member of ASEAN by population, with roughly half a million people concentrated along the coast of the island of Borneo. According to UNData, the country covers about 5,765 square kilometres and its population is forecast to remain stable through 2030, giving it one of the highest per-capita incomes in the region. Bandar Seri Begawan, the capital, is organised around the iconic Kampong Ayer water village, where stilted homes and mosques share the Brunei River with daily boat traffic. The economy is anchored by oil and gas exports, but the government has steadily diversified into halal products, financial services, and ecotourism in the Ulu Temburong rainforest. As a Malay Islamic Monarchy, Brunei places strong emphasis on its Malay language, Islamic values, and the royal institution of the Sultan. Public life is shaped by generous welfare provision, including subsidised healthcare and education, while civil society operates within tighter regulatory limits than elsewhere in Southeast Asia. Solidarity work in Brunei therefore focuses on cross-border causes — volunteering with ASEAN-wide disaster response, supporting Bruneian students abroad, and contributing to Borneo-wide conservation efforts that span Malaysia and Indonesia. UN OCHA and UNDP partner with the government on disaster preparedness given Brunei's position along the seismically active Pacific Ring of Fire.",
+      "waysToHelp": [
+        {
+          "title": "Volunteer with ASEAN disaster response drills",
+          "description": "Brunei hosts and contributes to ASEAN AHA Centre exercises; sign up through the AHA Centre volunteer network or your university's civil defence club to join cross-border drills."
+        },
+        {
+          "title": "Support Borneo rainforest conservation",
+          "description": "Donate to or volunteer with Heart of Borneo partners working across the Brunei-Malaysia-Indonesia border on reforestation and orang-utan habitat protection."
+        },
+        {
+          "title": "Mentor Bruneian students abroad",
+          "description": "Many Bruneian students study in Malaysia, Singapore, and Australia; offer mentorship through diaspora alumni associations to ease cultural and academic transition."
+        },
+        {
+          "title": "Promote Malay-language digital archives",
+          "description": "Contribute time as a transcriber or translator to Wikimedia projects documenting Bruneian history, dialects, and the Kampong Ayer oral tradition."
+        }
+      ],
+      "ngos": [
+        {
+          "name": "UNHCR Indonesia Regional Office (cites Brunei context)",
+          "url": "https://www.unhcr.org/asia-and-the-pacific",
+          "focus": "Refugee protection",
+          "verificationStatus": "unverified"
+        },
+        {
+          "name": "ASEAN Coordinating Centre for Humanitarian Assistance (AHA Centre)",
+          "url": "https://asean.org/our-communities/asean-socio-cultural-community/",
+          "focus": "Disaster management",
+          "verificationStatus": "verified"
+        },
+        {
+          "name": "UN OCHA Asia and the Pacific",
+          "url": "https://www.unocha.org/asia-and-pacific",
+          "focus": "Humanitarian coordination",
+          "verificationStatus": "verified"
+        },
+        {
+          "name": "Asian Development Bank (Brunei portfolio)",
+          "url": "https://www.adb.org/where-we-work",
+          "focus": "Development finance",
+          "verificationStatus": "verified"
+        }
+      ],
+      "relatedCountries": ["malaysia", "indonesia", "singapore"],
+      "sources": [
+        { "label": "UNData Brunei", "url": "https://data.un.org/en/iso/bn.html" },
+        { "label": "World Bank Brunei Darussalam", "url": "https://data.worldbank.org/country/brunei-darussalam" },
+        { "label": "UNHCR data — Brunei", "url": "https://data.unhcr.org/en/country/btn" }
+      ]
+    },
+    {
+      "slug": "cambodia",
+      "name": "Kingdom of Cambodia",
+      "iso2": "KH",
+      "iso3": "KHM",
+      "capital": "Phnom Penh",
+      "region": "Mainland Southeast Asia",
+      "population": 17000000,
+      "area_km2": 181035,
+      "languages": ["Khmer"],
+      "currency": "KHR",
+      "flagSrc": "/flags/flag-cambodia.svg",
+      "heroHeadline": "Khmer resilience powers a new generation of solidarity",
+      "overview": "Cambodia, home to more than 17 million people across 181,035 square kilometres, sits at the heart of mainland Southeast Asia, bordered by Thailand, Laos, and Vietnam. UNData records rapid urbanisation around Phnom Penh, where riverside markets, garment factories, and a growing startup scene are reshaping daily life. The country's recent history — including the legacy of the Khmer Rouge era and decades of civil conflict — has shaped a particularly strong culture of community-based mutual aid. Buddhism, practised by roughly 97% of the population, anchors social welfare through pagoda-based almsgiving, while international NGOs work alongside Cambodian organisations on education, demining, and rural healthcare. The garment sector is the largest formal employer and a major export earner, but working conditions and minimum wages are recurring concerns that solidarity movements frequently highlight. Cambodia's coastline along the Gulf of Thailand supports fishing communities, while Tonle Sap lake provides the bulk of the country's freshwater catch. ASEAN membership, formally joined in 1999, has opened regional supply chains and tourism corridors. Visitors and volunteers often work with Khmer NGOs focused on youth leadership, women in tech, environmental conservation in the Cardamom Mountains, and cultural heritage at Angkor and beyond.",
+      "waysToHelp": [
+        {
+          "title": "Sponsor a Khmer-language library or reading room",
+          "description": "Donate children's books in Khmer or fund a small lending library in a rural pagoda or community centre; organisations like Sipar operate mobile libraries across rural Cambodia."
+        },
+        {
+          "title": "Volunteer with demining and survivor assistance",
+          "description": "CMAC and partner organisations welcome skilled GIS specialists, medics, and trauma counsellors to support landmine clearance and survivor reintegration."
+        },
+        {
+          "title": "Back ethical fashion cooperatives",
+          "description": "Choose fair-trade Cambodian silk and cotton from worker-owned cooperatives; some receive technical assistance from UNIDO and Solidaridad."
+        },
+        {
+          "title": "Teach digital literacy in provincial towns",
+          "description": "Volunteer remotely or in person with coding schools like Sabai Code, or partner with universities to deliver English-for-tech curricula in Battambang and Siem Reap."
+        },
+        {
+          "title": "Protect the Cardamom and Mondulkiri forests",
+          "description": "Support community forests and Indigenous Bunong land rights through donations or advocacy with Conservation International and local partners."
+        }
+      ],
+      "ngos": [
+        {
+          "name": "UNHCR Cambodia",
+          "url": "https://data.unhcr.org/en/country/khm",
+          "focus": "Refugee protection",
+          "verificationStatus": "verified"
+        },
+        {
+          "name": "CARE Cambodia",
+          "url": "https://www.care.org/our-work/where-we-work/cambodia",
+          "focus": "Women's empowerment",
+          "verificationStatus": "verified"
+        },
+        {
+          "name": "UN OCHA Asia and the Pacific",
+          "url": "https://www.unocha.org/asia-and-pacific",
+          "focus": "Humanitarian coordination",
+          "verificationStatus": "verified"
+        },
+        {
+          "name": "UNDP Asia-Pacific",
+          "url": "https://www.undp.org/our-work/asia-and-the-pacific",
+          "focus": "Sustainable development",
+          "verificationStatus": "verified"
+        }
+      ],
+      "relatedCountries": ["thailand", "laos", "vietnam"],
+      "sources": [
+        { "label": "UNData Cambodia", "url": "https://data.un.org/en/iso/kh.html" },
+        { "label": "World Bank Cambodia", "url": "https://data.worldbank.org/country/cambodia" },
+        { "label": "ASEAN Socio-Cultural Community", "url": "https://asean.org/our-communities/asean-socio-cultural-community/" }
+      ]
+    },
+    {
+      "slug": "indonesia",
+      "name": "Republic of Indonesia",
+      "iso2": "ID",
+      "iso3": "IDN",
+      "capital": "Jakarta",
+      "region": "Maritime Southeast Asia",
+      "population": 280000000,
+      "area_km2": 1904569,
+      "languages": ["Indonesian"],
+      "currency": "IDR",
+      "flagSrc": "/flags/flag-indonesia.svg",
+      "heroHeadline": "The world's largest archipelago leads ASEAN solidarity by example",
+      "overview": "Indonesia spans more than 17,000 islands across roughly 1.9 million square kilometres, making it the largest archipelagic state on Earth and the fourth most populous nation globally at over 280 million people. UNData situates Indonesia's population growth on a steady downward trajectory as urbanisation accelerates and family planning programmes mature. Jakarta, the megacity capital on Java, is undergoing a historic relocation to Nusantara on Borneo to ease congestion and rising sea levels. Bahasa Indonesia, the national language, unifies more than 700 living languages and ethnic groups under a single literary tradition. The economy is the largest in Southeast Asia, driven by manufacturing, palm oil, nickel, tourism, and a fast-growing digital economy centred on GoTo and a constellation of super-apps. Indonesia is the founding member of ASEAN, the Association of Southeast Asian Nations, and hosted the secretariat in Jakarta for decades. Civil society is robust: from Muhammadiyah and Nahdlatul Ulama — two of the world's largest Muslim civil-society organisations — to environmental defenders in Papua and community health volunteers (kader) nationwide. Solidarity movements in Indonesia span disaster response after earthquakes and tsunamis, peatland and mangrove restoration, and Indigenous rights campaigns in West Papua and Kalimantan.",
+      "waysToHelp": [
+        {
+          "title": "Support mangrove and coral restoration in the Coral Triangle",
+          "description": "Donate to or volunteer with organisations restoring mangroves in Aceh and coral reefs in Raja Ampat; many accept marine biology interns and remote GIS volunteers."
+        },
+        {
+          "title": "Join disaster preparedness trainings",
+          "description": "Indonesia sits on the Pacific Ring of Fire; BNPB and partner NGOs run community volunteer programmes for earthquake, tsunami, and volcano readiness."
+        },
+        {
+          "title": "Buy directly from Indonesian smallholder farmers",
+          "description": "Use fair-trade platforms that connect coffee, cocoa, and spice farmers in Sulawesi and Flores with international buyers at ethical margins."
+        },
+        {
+          "title": "Translate open educational resources into Bahasa Indonesia",
+          "description": "Contribute to Wikimedia and Khan Academy translation drives, or partner with university language departments to localise climate and health materials."
+        },
+        {
+          "title": "Advocate for West Papua human rights",
+          "description": "Support reputable international NGOs documenting rights conditions and amplifying Papuan and Moluccan civil-society leaders through evidence-based advocacy."
+        }
+      ],
+      "ngos": [
+        {
+          "name": "UNHCR Indonesia",
+          "url": "https://data.unhcr.org/en/country/idn",
+          "focus": "Refugee protection",
+          "verificationStatus": "verified"
+        },
+        {
+          "name": "CARE Indonesia",
+          "url": "https://www.care.org/our-work/where-we-work/indonesia",
+          "focus": "Gender equality",
+          "verificationStatus": "verified"
+        },
+        {
+          "name": "UN OCHA Asia and the Pacific",
+          "url": "https://www.unocha.org/asia-and-pacific",
+          "focus": "Humanitarian coordination",
+          "verificationStatus": "verified"
+        },
+        {
+          "name": "World Food Programme Operations",
+          "url": "https://www.wfp.org/emergencies",
+          "focus": "Food security",
+          "verificationStatus": "verified"
+        },
+        {
+          "name": "UNDP Indonesia",
+          "url": "https://www.undp.org/indonesia",
+          "focus": "Sustainable development",
+          "verificationStatus": "unverified"
+        }
+      ],
+      "relatedCountries": ["malaysia", "singapore", "philippines"],
+      "sources": [
+        { "label": "UNData Indonesia", "url": "https://data.un.org/en/iso/id.html" },
+        { "label": "World Bank Indonesia", "url": "https://data.worldbank.org/country/indonesia" },
+        { "label": "ASEAN Member States", "url": "https://asean.org/our-communities/" }
+      ]
+    },
+    {
+      "slug": "laos",
+      "name": "Lao People's Democratic Republic",
+      "iso2": "LA",
+      "iso3": "LAO",
+      "capital": "Vientiane",
+      "region": "Mainland Southeast Asia",
+      "population": 7800000,
+      "area_km2": 236800,
+      "languages": ["Lao"],
+      "currency": "LAK",
+      "flagSrc": "/flags/flag-laos.svg",
+      "heroHeadline": "Landlocked Laos opens new paths for regional solidarity",
+      "overview": "The Lao People's Democratic Republic, commonly Laos, is a landlocked nation of roughly 7.8 million people spread across 236,800 square kilometres of mountainous terrain bordering China, Vietnam, Cambodia, Thailand, and Myanmar. UNData records a youthful demographic profile, with a median age in the mid-twenties and a slowly declining fertility rate as rural communities urbanise around Vientiane. The Mekong River runs through the capital and much of the country's economic life, supporting fisheries, river trade, and the China-Laos Railway that opened in 2021. Ethnic Lao make up roughly half the population, with the remainder comprising Hmong, Khmu, Tai Dam, and other recognised groups whose highland communities have distinct languages and traditions. The Lao economy depends heavily on hydropower exports, mining, and agriculture, with subsistence rice farming still widespread. Laos became a member of ASEAN in 1997 and has benefited from regional integration while remaining one of Southeast Asia's least densely populated countries. Civil society operates within a one-party state framework, so solidarity work is largely coordinated through UN agencies, the ASEAN framework, and international NGOs that partner with government ministries. UXO clearance, maternal health, and ethnic minority language education are priority areas documented by UN OCHA and UNDP.",
+      "waysToHelp": [
+        {
+          "title": "Sponsor UXO clearance and survivor assistance",
+          "description": "Donate to organisations clearing unexploded ordnance from the Indochina conflicts; survivors benefit from prosthetics, microloans, and trauma counselling programmes."
+        },
+        {
+          "title": "Support Lao maternal and child health programmes",
+          "description": "Volunteer or fundraise for rural midwife training, nutrition supplementation, and clean water projects coordinated through UNFPA and UNICEF partners."
+        },
+        {
+          "title": "Promote ethnic minority language education",
+          "description": "Contribute bilingual children's books or partner with NGOs documenting Hmong, Khmu, and Tai Dam oral traditions and folklore."
+        },
+        {
+          "title": "Back sustainable hydropower research",
+          "description": "Donate to or volunteer for environmental impact monitoring of Mekong dams; academic institutions frequently host visiting researchers and citizen scientists."
+        }
+      ],
+      "ngos": [
+        {
+          "name": "UNHCR Lao PDR",
+          "url": "https://data.unhcr.org/en/country/lao",
+          "focus": "Refugee protection",
+          "verificationStatus": "verified"
+        },
+        {
+          "name": "CARE Laos",
+          "url": "https://www.care.org/our-work/where-we-work/laos",
+          "focus": "Food security",
+          "verificationStatus": "verified"
+        },
+        {
+          "name": "UN OCHA Asia and the Pacific",
+          "url": "https://www.unocha.org/asia-and-pacific",
+          "focus": "Humanitarian coordination",
+          "verificationStatus": "verified"
+        },
+        {
+          "name": "UNDP Lao PDR",
+          "url": "https://www.undp.org/lao-peoples-democratic-republic",
+          "focus": "Sustainable development",
+          "verificationStatus": "unverified"
+        }
+      ],
+      "relatedCountries": ["cambodia", "thailand", "vietnam"],
+      "sources": [
+        { "label": "UNData Laos", "url": "https://data.un.org/en/iso/la.html" },
+        { "label": "World Bank Lao PDR", "url": "https://data.worldbank.org/country/lao-pdr" },
+        { "label": "UNHCR data — Lao PDR", "url": "https://data.unhcr.org/en/country/lao" }
+      ]
+    },
+    {
+      "slug": "malaysia",
+      "name": "Malaysia",
+      "iso2": "MY",
+      "iso3": "MYS",
+      "capital": "Kuala Lumpur",
+      "region": "Maritime Southeast Asia",
+      "population": 34000000,
+      "area_km2": 330803,
+      "languages": ["Malay"],
+      "currency": "MYR",
+      "flagSrc": "/flags/flag-malaysia.svg",
+      "heroHeadline": "Multicultural Malaysia weaves faith, language, and resilience together",
+      "overview": "Malaysia is a federation of 13 states and three federal territories spread across Peninsular and East Malaysia, totalling 330,803 square kilometres and home to more than 34 million people. UNData places the country's population growth in a moderate but steady band, supported by relatively young demographics alongside one of Southeast Asia's most rapidly ageing populations. Bahasa Melayu is the national language, while English, Mandarin, Tamil, and various Indigenous and Bornean languages thrive in daily life. The federal capital Kuala Lumpur and the adjacent administrative capital Putrajaya anchor the country's economy, with key exports including palm oil, electronics, liquefied natural gas, and Islamic financial services. Malaysia is home to significant Bornean rainforests in Sarawak and Sabah, where orang-utans, pygmy elephants, and biodiverse coral islands draw conservation attention. The country is a founding member of ASEAN, OIC, and the Commonwealth, and plays an active role in moderating regional diplomacy. Malaysian civil society is active — covering refugee rights, environmental defence, labour migration, and Islamic social finance — even as recent political shifts have narrowed space for some advocacy. Solidarity opportunities range from Borneo wildlife conservation to refugee resettlement support and post-flood community rebuilding in the east coast.",
+      "waysToHelp": [
+        {
+          "title": "Protect Bornean orang-utans and rainforests",
+          "description": "Volunteer or donate to organisations restoring forest corridors in Sabah and Sarawak; many accept eco-tourists, citizen scientists, and remote researchers."
+        },
+        {
+          "title": "Support refugee education in Kuala Lumpur",
+          "description": "Teach ESL or donate learning materials to community learning centres serving Rohingya, Myanmar, and Afghan refugee children in the Klang Valley."
+        },
+        {
+          "title": "Volunteer with post-flood recovery on the east coast",
+          "description": "Join or fund community rebuilding efforts after monsoon flooding in Kelantan and Terengganu through coordinated NGO and government programmes."
+        },
+        {
+          "title": "Promote Islamic social finance for poverty relief",
+          "description": "Donate zakat or waqf through accredited channels supporting orphan care, microfinance, and healthcare access in underserved Malaysian communities."
+        },
+        {
+          "title": "Mentor Malaysian climate-tech founders",
+          "description": "Offer mentorship, technical advice, or seed capital to founders tackling deforestation, sustainable palm oil, or marine conservation through regional startup hubs."
+        }
+      ],
+      "ngos": [
+        {
+          "name": "UNHCR Malaysia",
+          "url": "https://data.unhcr.org/en/country/mys",
+          "focus": "Refugee protection",
+          "verificationStatus": "verified"
+        },
+        {
+          "name": "MERCY Malaysia",
+          "url": "https://www.mercy.org.my/",
+          "focus": "Disaster relief",
+          "verificationStatus": "verified"
+        },
+        {
+          "name": "Malaysian Red Crescent Society",
+          "url": "https://www.redcrescent.org.my/",
+          "focus": "Humanitarian aid",
+          "verificationStatus": "verified"
+        },
+        {
+          "name": "UNDP Malaysia",
+          "url": "https://www.undp.org/malaysia",
+          "focus": "Sustainable development",
+          "verificationStatus": "unverified"
+        }
+      ],
+      "relatedCountries": ["indonesia", "singapore", "brunei"],
+      "sources": [
+        { "label": "UNData Malaysia", "url": "https://data.un.org/en/iso/my.html" },
+        { "label": "World Bank Malaysia", "url": "https://data.worldbank.org/country/malaysia" },
+        { "label": "ASEAN Member States", "url": "https://asean.org/our-communities/" }
+      ]
+    },
+    {
+      "slug": "myanmar",
+      "name": "Republic of the Union of Myanmar",
+      "iso2": "MM",
+      "iso3": "MMR",
+      "capital": "Naypyidaw",
+      "region": "Mainland Southeast Asia",
+      "population": 54000000,
+      "area_km2": 676578,
+      "languages": ["Burmese"],
+      "currency": "MMK",
+      "flagSrc": "/flags/flag-myanmar.svg",
+      "heroHeadline": "Myanmar's people endure crisis with quiet solidarity",
+      "overview": "Myanmar, the largest country in mainland Southeast Asia by area at 676,578 square kilometres, is home to more than 54 million people distributed across diverse ethnic states including Shan, Karen, Kachin, Chin, Mon, Rakhine, and Kayah. UNData records ongoing humanitarian pressure driven by conflict, displacement, and economic strain since the 2021 military takeover, with millions requiring food, shelter, and medical assistance. The administrative capital Naypyidaw was established in the early 2000s, while Yangon, Mandalay, and regional capitals remain the cultural and economic heart of the country. Burmese is the primary language, with over 100 ethnic languages spoken, including Shan, Karen, Kachin, and Chin. Myanmar's economy historically depended on agriculture, natural gas, jade, and garment exports; sanctions, currency volatility, and conflict have reshaped all of these since 2021. ASEAN has played a diplomatic mediation role through the Five Point Consensus, though implementation has been limited. Cross-border solidarity from Thailand, India, and Bangladesh supports millions of displaced people, and many international NGOs have relocated operations to neighbouring countries while maintaining community links. Honest reporting about Myanmar requires citing UN OCHA, UNHCR, and the World Bank, and avoiding inflated or unverified organisational claims. The solidarity community can contribute by funding cross-border food assistance, supporting refugee education in Thailand, and amplifying ethnic media outlets.",
+      "waysToHelp": [
+        {
+          "title": "Fund cross-border food and medical assistance",
+          "description": "Donate to UN-coordinated programmes delivering rice, nutrition supplements, and mobile clinics to displaced communities along the Thai-Myanmar border."
+        },
+        {
+          "title": "Support refugee education in Thai border camps",
+          "description": "Sponsor teacher salaries, learning materials, or boarding houses for Karen, Karenni, and Shan students studying in Mae Hong Son and Tak provinces."
+        },
+        {
+          "title": "Amplify ethnic and independent Myanmar media",
+          "description": "Subscribe to or share reporting from Frontier Myanmar, Mizzima, and ethnic-language outlets covering under-reported regions and communities."
+        },
+        {
+          "title": "Advocate for inclusive ASEAN mediation",
+          "description": "Engage with civil-society tracks like the ASEAN People Forum to keep humanitarian access and political inclusion on the regional agenda."
+        }
+      ],
+      "ngos": [
+        {
+          "name": "UNHCR Myanmar",
+          "url": "https://data.unhcr.org/en/country/mmr",
+          "focus": "Refugee protection",
+          "verificationStatus": "verified"
+        },
+        {
+          "name": "CARE Myanmar",
+          "url": "https://www.care.org/our-work/where-we-work/myanmar",
+          "focus": "Humanitarian assistance",
+          "verificationStatus": "verified"
+        },
+        {
+          "name": "UN OCHA Asia and the Pacific",
+          "url": "https://www.unocha.org/asia-and-pacific",
+          "focus": "Humanitarian coordination",
+          "verificationStatus": "verified"
+        },
+        {
+          "name": "UNDP Myanmar",
+          "url": "https://www.undp.org/myanmar",
+          "focus": "Sustainable development",
+          "verificationStatus": "unverified"
+        }
+      ],
+      "relatedCountries": ["thailand", "laos", "cambodia"],
+      "sources": [
+        { "label": "UNData Myanmar", "url": "https://data.un.org/en/iso/mm.html" },
+        { "label": "World Bank Myanmar", "url": "https://data.worldbank.org/country/myanmar" },
+        { "label": "UNHCR data — Myanmar", "url": "https://data.unhcr.org/en/country/mmr" }
+      ]
+    },
+    {
+      "slug": "philippines",
+      "name": "Republic of the Philippines",
+      "iso2": "PH",
+      "iso3": "PHL",
+      "capital": "Manila",
+      "region": "Maritime Southeast Asia",
+      "population": 117000000,
+      "area_km2": 300000,
+      "languages": ["Filipino", "English"],
+      "currency": "PHP",
+      "flagSrc": "/flags/flag-philippines.svg",
+      "heroHeadline": "Filipino bayanihan turns neighbourly care into national resilience",
+      "overview": "The Philippines is an archipelago of more than 7,600 islands covering roughly 300,000 square kilometres, with a population of about 117 million people concentrated on Luzon, Visayas, and Mindanao. UNData records one of Southeast Asia's youngest demographic profiles, alongside a substantial diaspora that sends remittances home from over 200 countries. Filipino and English serve as the official languages, with Cebuano, Ilocano, Hiligaynon, and dozens of regional languages also widely used. The capital region of Metro Manila is one of the world's most densely populated metropolitan areas, while Cebu, Davao, and Iloilo are emerging economic hubs. The Philippine economy is anchored by business process outsourcing, semiconductors, tourism, agriculture, and overseas worker remittances that consistently account for more than 8% of GDP. The country sits along the Pacific typhoon belt and the Ring of Fire, making disaster preparedness a defining national concern; community-based bayanihan traditions of mutual aid are deeply embedded in Filipino culture. Civil society is robust, with active campaigns on climate justice, Indigenous rights in the Cordillera and Mindanao, and press freedom. Solidarity work ranges from typhoon recovery and mangrove restoration to supporting seafarers' families and rural healthcare missions.",
+      "waysToHelp": [
+        {
+          "title": "Join typhoon preparedness and recovery efforts",
+          "description": "Volunteer with community-based organisations that pre-position relief supplies and rebuild homes after typhoons; many operate across Visayas and Eastern Mindanao."
+        },
+        {
+          "title": "Restore mangroves and coral reefs",
+          "description": "Donate to or volunteer with organisations planting mangroves in Palawan, Leyte, and Zamboanga to blunt storm surges and rebuild fisheries."
+        },
+        {
+          "title": "Support seafarer and overseas worker families",
+          "description": "Fund scholarships, mental health services, or family legal clinics supporting Filipino overseas workers and their dependents across the archipelago."
+        },
+        {
+          "title": "Back Indigenous Lumad and Mangyan education",
+          "description": "Sponsor community schools and teacher training programmes serving Lumad, Aeta, and Mangyan learners in ancestral domains."
+        },
+        {
+          "title": "Strengthen rural healthcare missions",
+          "description": "Volunteer with rural doctor and dentist missions in geographically isolated barangays; medical and dental volunteers are in constant demand."
+        }
+      ],
+      "ngos": [
+        {
+          "name": "UNHCR Philippines",
+          "url": "https://data.unhcr.org/en/country/phl",
+          "focus": "Refugee protection",
+          "verificationStatus": "verified"
+        },
+        {
+          "name": "CARE Philippines",
+          "url": "https://www.care.org/our-work/where-we-work/philippines",
+          "focus": "Disaster response",
+          "verificationStatus": "verified"
+        },
+        {
+          "name": "Philippine Red Cross",
+          "url": "https://redcross.org.ph/",
+          "focus": "Humanitarian aid",
+          "verificationStatus": "verified"
+        },
+        {
+          "name": "WWF-Philippines",
+          "url": "https://www.wwf.org.ph/",
+          "focus": "Marine conservation",
+          "verificationStatus": "verified"
+        },
+        {
+          "name": "UNDP Philippines",
+          "url": "https://www.undp.org/philippines",
+          "focus": "Sustainable development",
+          "verificationStatus": "unverified"
+        }
+      ],
+      "relatedCountries": ["indonesia", "malaysia", "vietnam"],
+      "sources": [
+        { "label": "UNData Philippines", "url": "https://data.un.org/en/iso/ph.html" },
+        { "label": "World Bank Philippines", "url": "https://data.worldbank.org/country/philippines" },
+        { "label": "UNHCR data — Philippines", "url": "https://data.unhcr.org/en/country/phl" }
+      ]
+    },
+    {
+      "slug": "singapore",
+      "name": "Republic of Singapore",
+      "iso2": "SG",
+      "iso3": "SGP",
+      "capital": "Singapore",
+      "region": "Maritime Southeast Asia",
+      "population": 5900000,
+      "area_km2": 728,
+      "languages": ["English", "Malay", "Mandarin", "Tamil"],
+      "currency": "SGD",
+      "flagSrc": "/flags/flag-singapore.svg",
+      "heroHeadline": "City-state Singapore exports solidarity across the region",
+      "overview": "Singapore is a sovereign city-state of roughly 5.9 million people occupying just 728 square kilometres at the southern tip of the Malay Peninsula. UNData documents one of the world's highest population densities alongside a consistently high life expectancy and a per-capita GDP at the top of ASEAN. The four official languages — English, Malay, Mandarin, and Tamil — reflect the country's multicultural foundation and are anchored by active ethnic community organisations. As a global financial, logistics, and innovation hub, Singapore hosts regional headquarters of multinational firms and a deep ecosystem of venture capital, fintech, and biomedical research. The country is also a founding member of ASEAN and consistently contributes to regional capacity-building in trade facilitation, digital payments, and pandemic preparedness. Despite its small geographic footprint, Singapore punches above its weight in international cooperation, sending technical experts abroad and providing humanitarian aid across Southeast Asia. Singapore's civil society emphasises migrant worker welfare, environmental sustainability, and youth volunteering. The Singapore Red Cross, Mercy Relief, and the National Volunteer & Philanthropy Centre coordinate much of this work, while Singapore International Foundation runs long-term programmes in Cambodia, Laos, Myanmar, Vietnam, and Timor-Leste.",
+      "waysToHelp": [
+        {
+          "title": "Support migrant worker welfare initiatives",
+          "description": "Volunteer with organisations providing healthcare, language classes, and recreation for the hundreds of thousands of migrant workers living in dormitories."
+        },
+        {
+          "title": "Join Singapore International Foundation programmes",
+          "description": "Apply for cross-border volunteering placements in Cambodia, Laos, Vietnam, or Myanmar focusing on education, healthcare, or social enterprise development."
+        },
+        {
+          "title": "Back local climate and biodiversity efforts",
+          "description": "Volunteer for habitat restoration at Sungei Buloh, Pulau Ubin, or the southern ridges; citizen-science surveys welcome international residents."
+        },
+        {
+          "title": "Donate to regional humanitarian appeals",
+          "description": "Support Singapore Red Cross and Mercy Relief appeals responding to typhoons in the Philippines, earthquakes in Indonesia, or floods in the Mekong region."
+        },
+        {
+          "title": "Mentor ASEAN startups and social enterprises",
+          "description": "Offer mentorship or pro-bono consulting to founders from across the region attending Singapore-based accelerators and impact investment programmes."
+        }
+      ],
+      "ngos": [
+        {
+          "name": "Singapore Red Cross",
+          "url": "https://www.redcross.sg/",
+          "focus": "Humanitarian aid",
+          "verificationStatus": "verified"
+        },
+        {
+          "name": "Mercy Relief",
+          "url": "https://www.mercyrelief.org/",
+          "focus": "Disaster response",
+          "verificationStatus": "verified"
+        },
+        {
+          "name": "UNHCR Singapore",
+          "url": "https://data.unhcr.org/en/country/sgp",
+          "focus": "Refugee protection",
+          "verificationStatus": "verified"
+        },
+        {
+          "name": "ASEAN Coordinating Centre for Humanitarian Assistance (AHA Centre)",
+          "url": "https://asean.org/our-communities/asean-socio-cultural-community/",
+          "focus": "Disaster management",
+          "verificationStatus": "verified"
+        }
+      ],
+      "relatedCountries": ["malaysia", "indonesia", "brunei"],
+      "sources": [
+        { "label": "UNData Singapore", "url": "https://data.un.org/en/iso/sg.html" },
+        { "label": "World Bank Singapore", "url": "https://data.worldbank.org/country/singapore" },
+        { "label": "ASEAN Member States", "url": "https://asean.org/our-communities/" }
+      ]
+    },
+    {
+      "slug": "thailand",
+      "name": "Kingdom of Thailand",
+      "iso2": "TH",
+      "iso3": "THA",
+      "capital": "Bangkok",
+      "region": "Mainland Southeast Asia",
+      "population": 71600000,
+      "area_km2": 513120,
+      "languages": ["Thai"],
+      "currency": "THB",
+      "flagSrc": "/flags/flag-thailand.svg",
+      "heroHeadline": "Thailand's smiles anchor regional solidarity and shared hope",
+      "overview": "Thailand covers 513,120 square kilometres with a population of about 71.6 million people, making it the second-largest economy in mainland Southeast Asia. UNData records Thailand's demographic transition from a high-fertility society to an ageing one expected to reach 30% over-60 by 2035. Thai is the sole official language, while regional Isan, Lanna, and southern Patani Malay dialects add cultural depth. Bangkok, the capital, is a megacity of more than ten million residents and serves as the political, financial, and tourism centre of the country. Other major urban centres include Chiang Mai in the north, a hub for digital nomads and creative industries, and the southern tourism economy around Phuket, Krabi, and Hat Yai. Thailand's economy relies on automotive manufacturing, electronics, tourism, agriculture (notably rice and rubber), and a large export sector. As a founding ASEAN member, Thailand plays an active regional role in disaster preparedness, public health, and labour migration policy. Civil society is vibrant, covering refugees along the Myanmar border, Indigenous Karen and Hmong communities in the highlands, urban poor in Bangkok, and Buddhist environmental movements. Solidarity work spans refugee resettlement support, sustainable tourism, and post-monsoon flood recovery.",
+      "waysToHelp": [
+        {
+          "title": "Teach English to Myanmar refugees on the border",
+          "description": "Volunteer with community-based organisations in Mae Sot, Mae Hong Son, and Chiang Mai providing education, healthcare, and livelihood training to displaced communities."
+        },
+        {
+          "title": "Promote sustainable tourism in coastal provinces",
+          "description": "Support community-based tourism cooperatives in Krabi, Trang, and Koh Lanta that channel visitor revenue into marine conservation and local schools."
+        },
+        {
+          "title": "Back urban food security programmes",
+          "description": "Volunteer or donate to community kitchens and rooftop garden networks serving low-income Bangkok neighbourhoods, particularly during monsoon disruptions."
+        },
+        {
+          "title": "Support Indigenous Karen and Hmong weaving collectives",
+          "description": "Buy fair-trade textiles directly from highland cooperatives; some partner with the UN Social and Economic Commission for Asia and the Pacific (ESCAP)."
+        },
+        {
+          "title": "Strengthen migrant labour rights",
+          "description": "Volunteer with migrant worker support centres in Bangkok, Samut Sakhon, and Songkhla that provide legal aid and Thai-language classes."
+        }
+      ],
+      "ngos": [
+        {
+          "name": "UNHCR Thailand",
+          "url": "https://data.unhcr.org/en/country/tha",
+          "focus": "Refugee protection",
+          "verificationStatus": "verified"
+        },
+        {
+          "name": "CARE Thailand",
+          "url": "https://www.care.org/our-work/where-we-work/thailand",
+          "focus": "Refugee assistance",
+          "verificationStatus": "verified"
+        },
+        {
+          "name": "UN OCHA Asia and the Pacific",
+          "url": "https://www.unocha.org/asia-and-pacific",
+          "focus": "Humanitarian coordination",
+          "verificationStatus": "verified"
+        },
+        {
+          "name": "ASEAN Coordinating Centre for Humanitarian Assistance (AHA Centre)",
+          "url": "https://asean.org/our-communities/asean-socio-cultural-community/",
+          "focus": "Disaster management",
+          "verificationStatus": "verified"
+        }
+      ],
+      "relatedCountries": ["myanmar", "laos", "cambodia"],
+      "sources": [
+        { "label": "UNData Thailand", "url": "https://data.un.org/en/iso/th.html" },
+        { "label": "World Bank Thailand", "url": "https://data.worldbank.org/country/thailand" },
+        { "label": "UNHCR data — Thailand", "url": "https://data.unhcr.org/en/country/tha" }
+      ]
+    },
+    {
+      "slug": "vietnam",
+      "name": "Socialist Republic of Vietnam",
+      "iso2": "VN",
+      "iso3": "VNM",
+      "capital": "Hanoi",
+      "region": "Mainland Southeast Asia",
+      "population": 100000000,
+      "area_km2": 331212,
+      "languages": ["Vietnamese"],
+      "currency": "VND",
+      "flagSrc": "/flags/flag-vietnam.svg",
+      "heroHeadline": "Modern Vietnam rises through resilience and shared prosperity",
+      "overview": "Vietnam stretches across 331,212 square kilometres along the eastern Indochinese Peninsula, with a population of roughly 100 million people distributed between the Red River Delta around Hanoi and the Mekong Delta in the south. UNData records Vietnam's rapid demographic transition, with fertility now at replacement level and life expectancy above 75 years. Vietnamese is the sole official language, written in the Latin-based quoc ngu script introduced in the early twentieth century. The political capital Hanoi and the commercial capital Ho Chi Minh City anchor a fast-growing economy that has lifted tens of millions out of poverty since Doi Moi reforms in 1986. Exports of electronics, textiles, footwear, coffee, and rice have made Vietnam one of the most dynamic emerging markets globally. Vietnam is a member of ASEAN, APEC, and CPTPP and plays an active role in regional supply chains and climate diplomacy. Civil society operates within state-defined boundaries, with labour unions, women's unions, and youth organisations coordinating much of the formal solidarity work alongside international NGOs. Opportunities for solidarity include climate adaptation in the Mekong Delta, support for Agent Orange survivors, ethnic minority education in the northern highlands, and humanitarian work in disaster-prone central provinces.",
+      "waysToHelp": [
+        {
+          "title": "Support Mekong Delta climate adaptation",
+          "description": "Donate to or volunteer with programmes building salinity-resistant housing, mangrove buffers, and resilient livelihoods in coastal communities facing rising seas."
+        },
+        {
+          "title": "Sponsor ethnic minority scholarships",
+          "description": "Contribute to scholarship programmes supporting Hmong, Dao, Tay, Khmer Krom, and other ethnic minority students to complete secondary and tertiary education."
+        },
+        {
+          "title": "Back disability inclusion for Agent Orange survivors",
+          "description": "Fund assistive devices, vocational training, and accessible community centres serving survivors of dioxin exposure and their children across central Vietnam."
+        },
+        {
+          "title": "Volunteer with wildlife rescue centres",
+          "description": "Support rescue and rehabilitation centres for pangolins, primates, and civets; many accept international volunteers with veterinary or husbandry skills."
+        },
+        {
+          "title": "Promote fair-trade Vietnamese coffee",
+          "description": "Buy direct from smallholder cooperatives in the Central Highlands; some receive technical assistance from Solidaridad and the IDH Sustainable Trade Initiative."
+        }
+      ],
+      "ngos": [
+        {
+          "name": "UNHCR Viet Nam",
+          "url": "https://data.unhcr.org/en/country/vnm",
+          "focus": "Refugee protection",
+          "verificationStatus": "verified"
+        },
+        {
+          "name": "CARE Viet Nam",
+          "url": "https://www.care.org/our-work/where-we-work/vietnam",
+          "focus": "Climate resilience",
+          "verificationStatus": "verified"
+        },
+        {
+          "name": "UN OCHA Asia and the Pacific",
+          "url": "https://www.unocha.org/asia-and-pacific",
+          "focus": "Humanitarian coordination",
+          "verificationStatus": "verified"
+        },
+        {
+          "name": "UNDP Viet Nam",
+          "url": "https://www.undp.org/vietnam",
+          "focus": "Sustainable development",
+          "verificationStatus": "unverified"
+        }
+      ],
+      "relatedCountries": ["cambodia", "laos", "thailand"],
+      "sources": [
+        { "label": "UNData Viet Nam", "url": "https://data.un.org/en/iso/vn.html" },
+        { "label": "World Bank Viet Nam", "url": "https://data.worldbank.org/country/viet-nam" },
+        { "label": "UNHCR data — Viet Nam", "url": "https://data.unhcr.org/en/country/vnm" }
+      ]
+    }
+  ]
+}
