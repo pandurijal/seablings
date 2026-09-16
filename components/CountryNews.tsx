@@ -1,24 +1,37 @@
 import newsData from "@/data/news.json";
+import type { NewsItemTopic } from "@/lib/topics";
 import type { Country } from "@/types";
 
-interface NewsItem {
-  country: string;
-  headline: string;
-  source: string;
-  url: string;
-  date: string;
-}
+interface NewsItemLocal extends NewsItemTopic {}
 
-function matches(country: string, item: NewsItem): boolean {
-  if (item.country === country) return true;
-  if (country.includes(item.country)) return true;
-  if (item.country.includes(country)) return true;
+function matches(countryName: string, item: NewsItemLocal): boolean {
+  if (item.country === countryName) return true;
+  if (countryName.includes(item.country)) return true;
+  if (item.country.includes(countryName)) return true;
   return false;
 }
 
-export default function CountryNews({ country }: { country: Country }) {
-  const items = (newsData as { items: NewsItem[] }).items.filter((it) =>
-    matches(country.name, it)
+function matchesTopic(item: NewsItemLocal, topicsFilter: string[]): boolean {
+  return (
+    Array.isArray(item.topics) &&
+    item.topics.some((t) => topicsFilter.includes(t))
+  );
+}
+
+export default function CountryNews({
+  country,
+  topicsFilter,
+  headingOverride,
+}: {
+  country: Country;
+  topicsFilter?: string[];
+  headingOverride?: string;
+}) {
+  const allItems = (newsData as { items: NewsItemLocal[] }).items;
+  const items = allItems.filter(
+    (it) =>
+      matches(country.name, it) &&
+      (topicsFilter ? matchesTopic(it, topicsFilter) : true),
   );
 
   return (
@@ -31,7 +44,7 @@ export default function CountryNews({ country }: { country: Country }) {
         id="news-heading"
         className="text-2xl md:text-3xl font-bold text-slate-900 tracking-tight mb-4"
       >
-        Latest from {country.name}
+        {headingOverride ?? `Latest from ${country.name}`}
       </h2>
       {items.length > 0 ? (
         <ul className="space-y-3">
