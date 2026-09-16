@@ -9,7 +9,10 @@
       "region": "Maritime Southeast Asia",
       "population": 500000,
       "area_km2": 5765,
-      "languages": ["Malay", "English"],
+      "languages": [
+        "Malay",
+        "English"
+      ],
       "currency": "BND",
       "flagSrc": "/flags/flag-brunei.svg",
       "heroHeadline": "Small in size, generous in community-led solidarity",
@@ -17,19 +20,32 @@
       "waysToHelp": [
         {
           "title": "Volunteer with ASEAN disaster response drills",
-          "description": "Brunei hosts and contributes to ASEAN AHA Centre exercises; sign up through the AHA Centre volunteer network or your university's civil defence club to join cross-border drills."
+          "description": "Brunei hosts and contributes to ASEAN AHA Centre exercises; sign up through the AHA Centre volunteer network or your university's civil defence club to join cross-border drills.",
+          "topics": [
+            "disaster-relief",
+            "humanitarian"
+          ]
         },
         {
           "title": "Support Borneo rainforest conservation",
-          "description": "Donate to or volunteer with Heart of Borneo partners working across the Brunei-Malaysia-Indonesia border on reforestation and orang-utan habitat protection."
+          "description": "Donate to or volunteer with Heart of Borneo partners working across the Brunei-Malaysia-Indonesia border on reforestation and orang-utan habitat protection.",
+          "topics": [
+            "environment"
+          ]
         },
         {
           "title": "Mentor Bruneian students abroad",
-          "description": "Many Bruneian students study in Malaysia, Singapore, and Australia; offer mentorship through diaspora alumni associations to ease cultural and academic transition."
+          "description": "Many Bruneian students study in Malaysia, Singapore, and Australia; offer mentorship through diaspora alumni associations to ease cultural and academic transition.",
+          "topics": [
+            "youth-leadership"
+          ]
         },
         {
           "title": "Promote Malay-language digital archives",
-          "description": "Contribute time as a transcriber or translator to Wikimedia projects documenting Bruneian history, dialects, and the Kampong Ayer oral tradition."
+          "description": "Contribute time as a transcriber or translator to Wikimedia projects documenting Bruneian history, dialects, and the Kampong Ayer oral tradition.",
+          "topics": [
+            "cultural-heritage"
+          ]
         }
       ],
       "ngos": [
@@ -37,32 +53,60 @@
           "name": "UNHCR Indonesia Regional Office (cites Brunei context)",
           "url": "https://www.unhcr.org/asia-and-the-pacific",
           "focus": "Refugee protection",
-          "verificationStatus": "unverified"
+          "verificationStatus": "unverified",
+          "topics": [
+            "humanitarian",
+            "indigenous-communities"
+          ]
         },
         {
           "name": "ASEAN Coordinating Centre for Humanitarian Assistance (AHA Centre)",
           "url": "https://asean.org/our-communities/asean-socio-cultural-community/",
           "focus": "Disaster management",
-          "verificationStatus": "verified"
+          "verificationStatus": "verified",
+          "topics": [
+            "disaster-relief"
+          ]
         },
         {
           "name": "UN OCHA Asia and the Pacific",
           "url": "https://www.unocha.org/asia-and-pacific",
           "focus": "Humanitarian coordination",
-          "verificationStatus": "verified"
+          "verificationStatus": "verified",
+          "topics": [
+            "humanitarian"
+          ]
         },
         {
           "name": "Asian Development Bank (Brunei portfolio)",
           "url": "https://www.adb.org/where-we-work",
           "focus": "Development finance",
-          "verificationStatus": "verified"
+          "verificationStatus": "verified",
+          "topics": [
+            "education",
+            "food-security",
+            "environment"
+          ]
         }
       ],
-      "relatedCountries": ["malaysia", "indonesia", "singapore"],
+      "relatedCountries": [
+        "malaysia",
+        "indonesia",
+        "singapore"
+      ],
       "sources": [
-        { "label": "UNData Brunei", "url": "https://data.un.org/en/iso/bn.html" },
-        { "label": "World Bank Brunei Darussalam", "url": "https://data.worldbank.org/country/brunei-darussalam" },
-        { "label": "UNHCR data — Brunei", "url": "https://data.unhcr.org/en/country/btn" }
+        {
+          "label": "UNData Brunei",
+          "url": "https://data.un.org/en/iso/bn.html"
+        },
+        {
+          "label": "World Bank Brunei Darussalam",
+          "url": "https://data.worldbank.org/country/brunei-darussalam"
+        },
+        {
+          "label": "UNHCR data — Brunei",
+          "url": "https://data.unhcr.org/en/country/btn"
+        }
       ]
     },
     {
@@ -74,7 +118,9 @@
       "region": "Mainland Southeast Asia",
       "population": 17000000,
       "area_km2": 181035,
-      "languages": ["Khmer"],
+      "languages": [
+        "Khmer"
+      ],
       "currency": "KHR",
       "flagSrc": "/flags/flag-cambodia.svg",
       "heroHeadline": "Khmer resilience powers a new generation of solidarity",
@@ -82,23 +128,42 @@
       "waysToHelp": [
         {
           "title": "Sponsor a Khmer-language library or reading room",
-          "description": "Donate children's books in Khmer or fund a small lending library in a rural pagoda or community centre; organisations like Sipar operate mobile libraries across rural Cambodia."
+          "description": "Donate children's books in Khmer or fund a small lending library in a rural pagoda or community centre; organisations like Sipar operate mobile libraries across rural Cambodia.",
+          "topics": [
+            "education",
+            "cultural-heritage"
+          ]
         },
         {
           "title": "Volunteer with demining and survivor assistance",
-          "description": "CMAC and partner organisations welcome skilled GIS specialists, medics, and trauma counsellors to support landmine clearance and survivor reintegration."
+          "description": "CMAC and partner organisations welcome skilled GIS specialists, medics, and trauma counsellors to support landmine clearance and survivor reintegration.",
+          "topics": [
+            "disaster-relief"
+          ]
         },
         {
           "title": "Back ethical fashion cooperatives",
-          "description": "Choose fair-trade Cambodian silk and cotton from worker-owned cooperatives; some receive technical assistance from UNIDO and Solidaridad."
+          "description": "Choose fair-trade Cambodian silk and cotton from worker-owned cooperatives; some receive technical assistance from UNIDO and Solidaridad.",
+          "topics": [
+            "education",
+            "youth-leadership"
+          ]
         },
         {
           "title": "Teach digital literacy in provincial towns",
-          "description": "Volunteer remotely or in person with coding schools like Sabai Code, or partner with universities to deliver English-for-tech curricula in Battambang and Siem Reap."
+          "description": "Volunteer remotely or in person with coding schools like Sabai Code, or partner with universities to deliver English-for-tech curricula in Battambang and Siem Reap.",
+          "topics": [
+            "education",
+            "youth-leadership"
+          ]
         },
         {
           "title": "Protect the Cardamom and Mondulkiri forests",
-          "description": "Support community forests and Indigenous Bunong land rights through donations or advocacy with Conservation International and local partners."
+          "description": "Support community forests and Indigenous Bunong land rights through donations or advocacy with Conservation International and local partners.",
+          "topics": [
+            "environment",
+            "indigenous-communities"
+          ]
         }
       ],
       "ngos": [
@@ -106,32 +171,62 @@
           "name": "UNHCR Cambodia",
           "url": "https://data.unhcr.org/en/country/khm",
           "focus": "Refugee protection",
-          "verificationStatus": "verified"
+          "verificationStatus": "verified",
+          "topics": [
+            "humanitarian",
+            "indigenous-communities"
+          ]
         },
         {
           "name": "CARE Cambodia",
           "url": "https://www.care.org/our-work/where-we-work/cambodia",
           "focus": "Women's empowerment",
-          "verificationStatus": "verified"
+          "verificationStatus": "verified",
+          "topics": [
+            "women-girls"
+          ]
         },
         {
           "name": "UN OCHA Asia and the Pacific",
           "url": "https://www.unocha.org/asia-and-pacific",
           "focus": "Humanitarian coordination",
-          "verificationStatus": "verified"
+          "verificationStatus": "verified",
+          "topics": [
+            "humanitarian"
+          ]
         },
         {
           "name": "UNDP Asia-Pacific",
           "url": "https://www.undp.org/our-work/asia-and-the-pacific",
           "focus": "Sustainable development",
-          "verificationStatus": "verified"
+          "verificationStatus": "verified",
+          "topics": [
+            "environment",
+            "education",
+            "health",
+            "youth-leadership",
+            "cultural-heritage"
+          ]
         }
       ],
-      "relatedCountries": ["thailand", "laos", "vietnam"],
+      "relatedCountries": [
+        "thailand",
+        "laos",
+        "vietnam"
+      ],
       "sources": [
-        { "label": "UNData Cambodia", "url": "https://data.un.org/en/iso/kh.html" },
-        { "label": "World Bank Cambodia", "url": "https://data.worldbank.org/country/cambodia" },
-        { "label": "ASEAN Socio-Cultural Community", "url": "https://asean.org/our-communities/asean-socio-cultural-community/" }
+        {
+          "label": "UNData Cambodia",
+          "url": "https://data.un.org/en/iso/kh.html"
+        },
+        {
+          "label": "World Bank Cambodia",
+          "url": "https://data.worldbank.org/country/cambodia"
+        },
+        {
+          "label": "ASEAN Socio-Cultural Community",
+          "url": "https://asean.org/our-communities/asean-socio-cultural-community/"
+        }
       ]
     },
     {
@@ -143,7 +238,9 @@
       "region": "Maritime Southeast Asia",
       "population": 280000000,
       "area_km2": 1904569,
-      "languages": ["Indonesian"],
+      "languages": [
+        "Indonesian"
+      ],
       "currency": "IDR",
       "flagSrc": "/flags/flag-indonesia.svg",
       "heroHeadline": "The world's largest archipelago leads ASEAN solidarity by example",
@@ -151,23 +248,41 @@
       "waysToHelp": [
         {
           "title": "Support mangrove and coral restoration in the Coral Triangle",
-          "description": "Donate to or volunteer with organisations restoring mangroves in Aceh and coral reefs in Raja Ampat; many accept marine biology interns and remote GIS volunteers."
+          "description": "Donate to or volunteer with organisations restoring mangroves in Aceh and coral reefs in Raja Ampat; many accept marine biology interns and remote GIS volunteers.",
+          "topics": [
+            "environment",
+            "cultural-heritage"
+          ]
         },
         {
           "title": "Join disaster preparedness trainings",
-          "description": "Indonesia sits on the Pacific Ring of Fire; BNPB and partner NGOs run community volunteer programmes for earthquake, tsunami, and volcano readiness."
+          "description": "Indonesia sits on the Pacific Ring of Fire; BNPB and partner NGOs run community volunteer programmes for earthquake, tsunami, and volcano readiness.",
+          "topics": [
+            "disaster-relief"
+          ]
         },
         {
           "title": "Buy directly from Indonesian smallholder farmers",
-          "description": "Use fair-trade platforms that connect coffee, cocoa, and spice farmers in Sulawesi and Flores with international buyers at ethical margins."
+          "description": "Use fair-trade platforms that connect coffee, cocoa, and spice farmers in Sulawesi and Flores with international buyers at ethical margins.",
+          "topics": [
+            "food-security"
+          ]
         },
         {
           "title": "Translate open educational resources into Bahasa Indonesia",
-          "description": "Contribute to Wikimedia and Khan Academy translation drives, or partner with university language departments to localise climate and health materials."
+          "description": "Contribute to Wikimedia and Khan Academy translation drives, or partner with university language departments to localise climate and health materials.",
+          "topics": [
+            "education",
+            "environment"
+          ]
         },
         {
           "title": "Advocate for West Papua human rights",
-          "description": "Support reputable international NGOs documenting rights conditions and amplifying Papuan and Moluccan civil-society leaders through evidence-based advocacy."
+          "description": "Support reputable international NGOs documenting rights conditions and amplifying Papuan and Moluccan civil-society leaders through evidence-based advocacy.",
+          "topics": [
+            "indigenous-communities",
+            "humanitarian"
+          ]
         }
       ],
       "ngos": [
@@ -175,38 +290,71 @@
           "name": "UNHCR Indonesia",
           "url": "https://data.unhcr.org/en/country/idn",
           "focus": "Refugee protection",
-          "verificationStatus": "verified"
+          "verificationStatus": "verified",
+          "topics": [
+            "humanitarian",
+            "indigenous-communities"
+          ]
         },
         {
           "name": "CARE Indonesia",
           "url": "https://www.care.org/our-work/where-we-work/indonesia",
           "focus": "Gender equality",
-          "verificationStatus": "verified"
+          "verificationStatus": "verified",
+          "topics": [
+            "women-girls"
+          ]
         },
         {
           "name": "UN OCHA Asia and the Pacific",
           "url": "https://www.unocha.org/asia-and-pacific",
           "focus": "Humanitarian coordination",
-          "verificationStatus": "verified"
+          "verificationStatus": "verified",
+          "topics": [
+            "humanitarian"
+          ]
         },
         {
           "name": "World Food Programme Operations",
           "url": "https://www.wfp.org/emergencies",
           "focus": "Food security",
-          "verificationStatus": "verified"
+          "verificationStatus": "verified",
+          "topics": [
+            "food-security"
+          ]
         },
         {
           "name": "UNDP Indonesia",
           "url": "https://www.undp.org/indonesia",
           "focus": "Sustainable development",
-          "verificationStatus": "unverified"
+          "verificationStatus": "unverified",
+          "topics": [
+            "environment",
+            "education",
+            "health",
+            "youth-leadership",
+            "cultural-heritage"
+          ]
         }
       ],
-      "relatedCountries": ["malaysia", "singapore", "philippines"],
+      "relatedCountries": [
+        "malaysia",
+        "singapore",
+        "philippines"
+      ],
       "sources": [
-        { "label": "UNData Indonesia", "url": "https://data.un.org/en/iso/id.html" },
-        { "label": "World Bank Indonesia", "url": "https://data.worldbank.org/country/indonesia" },
-        { "label": "ASEAN Member States", "url": "https://asean.org/our-communities/" }
+        {
+          "label": "UNData Indonesia",
+          "url": "https://data.un.org/en/iso/id.html"
+        },
+        {
+          "label": "World Bank Indonesia",
+          "url": "https://data.worldbank.org/country/indonesia"
+        },
+        {
+          "label": "ASEAN Member States",
+          "url": "https://asean.org/our-communities/"
+        }
       ]
     },
     {
@@ -218,7 +366,9 @@
       "region": "Mainland Southeast Asia",
       "population": 7800000,
       "area_km2": 236800,
-      "languages": ["Lao"],
+      "languages": [
+        "Lao"
+      ],
       "currency": "LAK",
       "flagSrc": "/flags/flag-laos.svg",
       "heroHeadline": "Landlocked Laos opens new paths for regional solidarity",
@@ -226,19 +376,33 @@
       "waysToHelp": [
         {
           "title": "Sponsor UXO clearance and survivor assistance",
-          "description": "Donate to organisations clearing unexploded ordnance from the Indochina conflicts; survivors benefit from prosthetics, microloans, and trauma counselling programmes."
+          "description": "Donate to organisations clearing unexploded ordnance from the Indochina conflicts; survivors benefit from prosthetics, microloans, and trauma counselling programmes.",
+          "topics": [
+            "disaster-relief"
+          ]
         },
         {
           "title": "Support Lao maternal and child health programmes",
-          "description": "Volunteer or fundraise for rural midwife training, nutrition supplementation, and clean water projects coordinated through UNFPA and UNICEF partners."
+          "description": "Volunteer or fundraise for rural midwife training, nutrition supplementation, and clean water projects coordinated through UNFPA and UNICEF partners.",
+          "topics": [
+            "health",
+            "women-girls"
+          ]
         },
         {
           "title": "Promote ethnic minority language education",
-          "description": "Contribute bilingual children's books or partner with NGOs documenting Hmong, Khmu, and Tai Dam oral traditions and folklore."
+          "description": "Contribute bilingual children's books or partner with NGOs documenting Hmong, Khmu, and Tai Dam oral traditions and folklore.",
+          "topics": [
+            "education",
+            "indigenous-communities"
+          ]
         },
         {
           "title": "Back sustainable hydropower research",
-          "description": "Donate to or volunteer for environmental impact monitoring of Mekong dams; academic institutions frequently host visiting researchers and citizen scientists."
+          "description": "Donate to or volunteer for environmental impact monitoring of Mekong dams; academic institutions frequently host visiting researchers and citizen scientists.",
+          "topics": [
+            "humanitarian"
+          ]
         }
       ],
       "ngos": [
@@ -246,32 +410,62 @@
           "name": "UNHCR Lao PDR",
           "url": "https://data.unhcr.org/en/country/lao",
           "focus": "Refugee protection",
-          "verificationStatus": "verified"
+          "verificationStatus": "verified",
+          "topics": [
+            "humanitarian",
+            "indigenous-communities"
+          ]
         },
         {
           "name": "CARE Laos",
           "url": "https://www.care.org/our-work/where-we-work/laos",
           "focus": "Food security",
-          "verificationStatus": "verified"
+          "verificationStatus": "verified",
+          "topics": [
+            "food-security"
+          ]
         },
         {
           "name": "UN OCHA Asia and the Pacific",
           "url": "https://www.unocha.org/asia-and-pacific",
           "focus": "Humanitarian coordination",
-          "verificationStatus": "verified"
+          "verificationStatus": "verified",
+          "topics": [
+            "humanitarian"
+          ]
         },
         {
           "name": "UNDP Lao PDR",
           "url": "https://www.undp.org/lao-peoples-democratic-republic",
           "focus": "Sustainable development",
-          "verificationStatus": "unverified"
+          "verificationStatus": "unverified",
+          "topics": [
+            "environment",
+            "education",
+            "health",
+            "youth-leadership",
+            "cultural-heritage"
+          ]
         }
       ],
-      "relatedCountries": ["cambodia", "thailand", "vietnam"],
+      "relatedCountries": [
+        "cambodia",
+        "thailand",
+        "vietnam"
+      ],
       "sources": [
-        { "label": "UNData Laos", "url": "https://data.un.org/en/iso/la.html" },
-        { "label": "World Bank Lao PDR", "url": "https://data.worldbank.org/country/lao-pdr" },
-        { "label": "UNHCR data — Lao PDR", "url": "https://data.unhcr.org/en/country/lao" }
+        {
+          "label": "UNData Laos",
+          "url": "https://data.un.org/en/iso/la.html"
+        },
+        {
+          "label": "World Bank Lao PDR",
+          "url": "https://data.worldbank.org/country/lao-pdr"
+        },
+        {
+          "label": "UNHCR data — Lao PDR",
+          "url": "https://data.unhcr.org/en/country/lao"
+        }
       ]
     },
     {
@@ -283,7 +477,9 @@
       "region": "Maritime Southeast Asia",
       "population": 34000000,
       "area_km2": 330803,
-      "languages": ["Malay"],
+      "languages": [
+        "Malay"
+      ],
       "currency": "MYR",
       "flagSrc": "/flags/flag-malaysia.svg",
       "heroHeadline": "Multicultural Malaysia weaves faith, language, and resilience together",
@@ -291,23 +487,41 @@
       "waysToHelp": [
         {
           "title": "Protect Bornean orang-utans and rainforests",
-          "description": "Volunteer or donate to organisations restoring forest corridors in Sabah and Sarawak; many accept eco-tourists, citizen scientists, and remote researchers."
+          "description": "Volunteer or donate to organisations restoring forest corridors in Sabah and Sarawak; many accept eco-tourists, citizen scientists, and remote researchers.",
+          "topics": [
+            "environment"
+          ]
         },
         {
           "title": "Support refugee education in Kuala Lumpur",
-          "description": "Teach ESL or donate learning materials to community learning centres serving Rohingya, Myanmar, and Afghan refugee children in the Klang Valley."
+          "description": "Teach ESL or donate learning materials to community learning centres serving Rohingya, Myanmar, and Afghan refugee children in the Klang Valley.",
+          "topics": [
+            "education",
+            "humanitarian"
+          ]
         },
         {
           "title": "Volunteer with post-flood recovery on the east coast",
-          "description": "Join or fund community rebuilding efforts after monsoon flooding in Kelantan and Terengganu through coordinated NGO and government programmes."
+          "description": "Join or fund community rebuilding efforts after monsoon flooding in Kelantan and Terengganu through coordinated NGO and government programmes.",
+          "topics": [
+            "disaster-relief"
+          ]
         },
         {
           "title": "Promote Islamic social finance for poverty relief",
-          "description": "Donate zakat or waqf through accredited channels supporting orphan care, microfinance, and healthcare access in underserved Malaysian communities."
+          "description": "Donate zakat or waqf through accredited channels supporting orphan care, microfinance, and healthcare access in underserved Malaysian communities.",
+          "topics": [
+            "health",
+            "humanitarian"
+          ]
         },
         {
           "title": "Mentor Malaysian climate-tech founders",
-          "description": "Offer mentorship, technical advice, or seed capital to founders tackling deforestation, sustainable palm oil, or marine conservation through regional startup hubs."
+          "description": "Offer mentorship, technical advice, or seed capital to founders tackling deforestation, sustainable palm oil, or marine conservation through regional startup hubs.",
+          "topics": [
+            "education",
+            "youth-leadership"
+          ]
         }
       ],
       "ngos": [
@@ -315,32 +529,63 @@
           "name": "UNHCR Malaysia",
           "url": "https://data.unhcr.org/en/country/mys",
           "focus": "Refugee protection",
-          "verificationStatus": "verified"
+          "verificationStatus": "verified",
+          "topics": [
+            "humanitarian",
+            "indigenous-communities"
+          ]
         },
         {
           "name": "MERCY Malaysia",
           "url": "https://www.mercy.org.my/",
           "focus": "Disaster relief",
-          "verificationStatus": "verified"
+          "verificationStatus": "verified",
+          "topics": [
+            "disaster-relief"
+          ]
         },
         {
           "name": "Malaysian Red Crescent Society",
           "url": "https://www.redcrescent.org.my/",
           "focus": "Humanitarian aid",
-          "verificationStatus": "verified"
+          "verificationStatus": "verified",
+          "topics": [
+            "disaster-relief",
+            "humanitarian"
+          ]
         },
         {
           "name": "UNDP Malaysia",
           "url": "https://www.undp.org/malaysia",
           "focus": "Sustainable development",
-          "verificationStatus": "unverified"
+          "verificationStatus": "unverified",
+          "topics": [
+            "environment",
+            "education",
+            "health",
+            "youth-leadership",
+            "cultural-heritage"
+          ]
         }
       ],
-      "relatedCountries": ["indonesia", "singapore", "brunei"],
+      "relatedCountries": [
+        "indonesia",
+        "singapore",
+        "brunei"
+      ],
       "sources": [
-        { "label": "UNData Malaysia", "url": "https://data.un.org/en/iso/my.html" },
-        { "label": "World Bank Malaysia", "url": "https://data.worldbank.org/country/malaysia" },
-        { "label": "ASEAN Member States", "url": "https://asean.org/our-communities/" }
+        {
+          "label": "UNData Malaysia",
+          "url": "https://data.un.org/en/iso/my.html"
+        },
+        {
+          "label": "World Bank Malaysia",
+          "url": "https://data.worldbank.org/country/malaysia"
+        },
+        {
+          "label": "ASEAN Member States",
+          "url": "https://asean.org/our-communities/"
+        }
       ]
     },
     {
@@ -352,7 +597,9 @@
       "region": "Mainland Southeast Asia",
       "population": 54000000,
       "area_km2": 676578,
-      "languages": ["Burmese"],
+      "languages": [
+        "Burmese"
+      ],
       "currency": "MMK",
       "flagSrc": "/flags/flag-myanmar.svg",
       "heroHeadline": "Myanmar's people endure crisis with quiet solidarity",
@@ -360,19 +607,34 @@
       "waysToHelp": [
         {
           "title": "Fund cross-border food and medical assistance",
-          "description": "Donate to UN-coordinated programmes delivering rice, nutrition supplements, and mobile clinics to displaced communities along the Thai-Myanmar border."
+          "description": "Donate to UN-coordinated programmes delivering rice, nutrition supplements, and mobile clinics to displaced communities along the Thai-Myanmar border.",
+          "topics": [
+            "health",
+            "food-security"
+          ]
         },
         {
           "title": "Support refugee education in Thai border camps",
-          "description": "Sponsor teacher salaries, learning materials, or boarding houses for Karen, Karenni, and Shan students studying in Mae Hong Son and Tak provinces."
+          "description": "Sponsor teacher salaries, learning materials, or boarding houses for Karen, Karenni, and Shan students studying in Mae Hong Son and Tak provinces.",
+          "topics": [
+            "education",
+            "youth-leadership"
+          ]
         },
         {
           "title": "Amplify ethnic and independent Myanmar media",
-          "description": "Subscribe to or share reporting from Frontier Myanmar, Mizzima, and ethnic-language outlets covering under-reported regions and communities."
+          "description": "Subscribe to or share reporting from Frontier Myanmar, Mizzima, and ethnic-language outlets covering under-reported regions and communities.",
+          "topics": [
+            "indigenous-communities",
+            "cultural-heritage"
+          ]
         },
         {
           "title": "Advocate for inclusive ASEAN mediation",
-          "description": "Engage with civil-society tracks like the ASEAN People Forum to keep humanitarian access and political inclusion on the regional agenda."
+          "description": "Engage with civil-society tracks like the ASEAN People Forum to keep humanitarian access and political inclusion on the regional agenda.",
+          "topics": [
+            "humanitarian"
+          ]
         }
       ],
       "ngos": [
@@ -380,32 +642,64 @@
           "name": "UNHCR Myanmar",
           "url": "https://data.unhcr.org/en/country/mmr",
           "focus": "Refugee protection",
-          "verificationStatus": "verified"
+          "verificationStatus": "verified",
+          "topics": [
+            "humanitarian",
+            "indigenous-communities"
+          ]
         },
         {
           "name": "CARE Myanmar",
           "url": "https://www.care.org/our-work/where-we-work/myanmar",
           "focus": "Humanitarian assistance",
-          "verificationStatus": "verified"
+          "verificationStatus": "verified",
+          "topics": [
+            "humanitarian",
+            "youth-leadership",
+            "women-girls"
+          ]
         },
         {
           "name": "UN OCHA Asia and the Pacific",
           "url": "https://www.unocha.org/asia-and-pacific",
           "focus": "Humanitarian coordination",
-          "verificationStatus": "verified"
+          "verificationStatus": "verified",
+          "topics": [
+            "humanitarian"
+          ]
         },
         {
           "name": "UNDP Myanmar",
           "url": "https://www.undp.org/myanmar",
           "focus": "Sustainable development",
-          "verificationStatus": "unverified"
+          "verificationStatus": "unverified",
+          "topics": [
+            "environment",
+            "education",
+            "health",
+            "youth-leadership",
+            "cultural-heritage"
+          ]
         }
       ],
-      "relatedCountries": ["thailand", "laos", "cambodia"],
+      "relatedCountries": [
+        "thailand",
+        "laos",
+        "cambodia"
+      ],
       "sources": [
-        { "label": "UNData Myanmar", "url": "https://data.un.org/en/iso/mm.html" },
-        { "label": "World Bank Myanmar", "url": "https://data.worldbank.org/country/myanmar" },
-        { "label": "UNHCR data — Myanmar", "url": "https://data.unhcr.org/en/country/mmr" }
+        {
+          "label": "UNData Myanmar",
+          "url": "https://data.un.org/en/iso/mm.html"
+        },
+        {
+          "label": "World Bank Myanmar",
+          "url": "https://data.worldbank.org/country/myanmar"
+        },
+        {
+          "label": "UNHCR data — Myanmar",
+          "url": "https://data.unhcr.org/en/country/mmr"
+        }
       ]
     },
     {
@@ -417,7 +711,10 @@
       "region": "Maritime Southeast Asia",
       "population": 117000000,
       "area_km2": 300000,
-      "languages": ["Filipino", "English"],
+      "languages": [
+        "Filipino",
+        "English"
+      ],
       "currency": "PHP",
       "flagSrc": "/flags/flag-philippines.svg",
       "heroHeadline": "Filipino bayanihan turns neighbourly care into national resilience",
@@ -425,23 +722,41 @@
       "waysToHelp": [
         {
           "title": "Join typhoon preparedness and recovery efforts",
-          "description": "Volunteer with community-based organisations that pre-position relief supplies and rebuild homes after typhoons; many operate across Visayas and Eastern Mindanao."
+          "description": "Volunteer with community-based organisations that pre-position relief supplies and rebuild homes after typhoons; many operate across Visayas and Eastern Mindanao.",
+          "topics": [
+            "disaster-relief"
+          ]
         },
         {
           "title": "Restore mangroves and coral reefs",
-          "description": "Donate to or volunteer with organisations planting mangroves in Palawan, Leyte, and Zamboanga to blunt storm surges and rebuild fisheries."
+          "description": "Donate to or volunteer with organisations planting mangroves in Palawan, Leyte, and Zamboanga to blunt storm surges and rebuild fisheries.",
+          "topics": [
+            "environment",
+            "cultural-heritage"
+          ]
         },
         {
           "title": "Support seafarer and overseas worker families",
-          "description": "Fund scholarships, mental health services, or family legal clinics supporting Filipino overseas workers and their dependents across the archipelago."
+          "description": "Fund scholarships, mental health services, or family legal clinics supporting Filipino overseas workers and their dependents across the archipelago.",
+          "topics": [
+            "education",
+            "health"
+          ]
         },
         {
           "title": "Back Indigenous Lumad and Mangyan education",
-          "description": "Sponsor community schools and teacher training programmes serving Lumad, Aeta, and Mangyan learners in ancestral domains."
+          "description": "Sponsor community schools and teacher training programmes serving Lumad, Aeta, and Mangyan learners in ancestral domains.",
+          "topics": [
+            "education",
+            "indigenous-communities"
+          ]
         },
         {
           "title": "Strengthen rural healthcare missions",
-          "description": "Volunteer with rural doctor and dentist missions in geographically isolated barangays; medical and dental volunteers are in constant demand."
+          "description": "Volunteer with rural doctor and dentist missions in geographically isolated barangays; medical and dental volunteers are in constant demand.",
+          "topics": [
+            "health"
+          ]
         }
       ],
       "ngos": [
@@ -449,38 +764,72 @@
           "name": "UNHCR Philippines",
           "url": "https://data.unhcr.org/en/country/phl",
           "focus": "Refugee protection",
-          "verificationStatus": "verified"
+          "verificationStatus": "verified",
+          "topics": [
+            "humanitarian",
+            "indigenous-communities"
+          ]
         },
         {
           "name": "CARE Philippines",
           "url": "https://www.care.org/our-work/where-we-work/philippines",
           "focus": "Disaster response",
-          "verificationStatus": "verified"
+          "verificationStatus": "verified",
+          "topics": [
+            "disaster-relief"
+          ]
         },
         {
           "name": "Philippine Red Cross",
           "url": "https://redcross.org.ph/",
           "focus": "Humanitarian aid",
-          "verificationStatus": "verified"
+          "verificationStatus": "verified",
+          "topics": [
+            "disaster-relief",
+            "humanitarian"
+          ]
         },
         {
           "name": "WWF-Philippines",
           "url": "https://www.wwf.org.ph/",
           "focus": "Marine conservation",
-          "verificationStatus": "verified"
+          "verificationStatus": "verified",
+          "topics": [
+            "environment"
+          ]
         },
         {
           "name": "UNDP Philippines",
           "url": "https://www.undp.org/philippines",
           "focus": "Sustainable development",
-          "verificationStatus": "unverified"
+          "verificationStatus": "unverified",
+          "topics": [
+            "environment",
+            "education",
+            "health",
+            "youth-leadership",
+            "cultural-heritage"
+          ]
         }
       ],
-      "relatedCountries": ["indonesia", "malaysia", "vietnam"],
+      "relatedCountries": [
+        "indonesia",
+        "malaysia",
+        "vietnam"
+      ],
       "sources": [
-        { "label": "UNData Philippines", "url": "https://data.un.org/en/iso/ph.html" },
-        { "label": "World Bank Philippines", "url": "https://data.worldbank.org/country/philippines" },
-        { "label": "UNHCR data — Philippines", "url": "https://data.unhcr.org/en/country/phl" }
+        {
+          "label": "UNData Philippines",
+          "url": "https://data.un.org/en/iso/ph.html"
+        },
+        {
+          "label": "World Bank Philippines",
+          "url": "https://data.worldbank.org/country/philippines"
+        },
+        {
+          "label": "UNHCR data — Philippines",
+          "url": "https://data.unhcr.org/en/country/phl"
+        }
       ]
     },
     {
@@ -492,7 +841,12 @@
       "region": "Maritime Southeast Asia",
       "population": 5900000,
       "area_km2": 728,
-      "languages": ["English", "Malay", "Mandarin", "Tamil"],
+      "languages": [
+        "English",
+        "Malay",
+        "Mandarin",
+        "Tamil"
+      ],
       "currency": "SGD",
       "flagSrc": "/flags/flag-singapore.svg",
       "heroHeadline": "City-state Singapore exports solidarity across the region",
@@ -500,23 +854,42 @@
       "waysToHelp": [
         {
           "title": "Support migrant worker welfare initiatives",
-          "description": "Volunteer with organisations providing healthcare, language classes, and recreation for the hundreds of thousands of migrant workers living in dormitories."
+          "description": "Volunteer with organisations providing healthcare, language classes, and recreation for the hundreds of thousands of migrant workers living in dormitories.",
+          "topics": [
+            "health",
+            "cultural-heritage"
+          ]
         },
         {
           "title": "Join Singapore International Foundation programmes",
-          "description": "Apply for cross-border volunteering placements in Cambodia, Laos, Vietnam, or Myanmar focusing on education, healthcare, or social enterprise development."
+          "description": "Apply for cross-border volunteering placements in Cambodia, Laos, Vietnam, or Myanmar focusing on education, healthcare, or social enterprise development.",
+          "topics": [
+            "education",
+            "health"
+          ]
         },
         {
           "title": "Back local climate and biodiversity efforts",
-          "description": "Volunteer for habitat restoration at Sungei Buloh, Pulau Ubin, or the southern ridges; citizen-science surveys welcome international residents."
+          "description": "Volunteer for habitat restoration at Sungei Buloh, Pulau Ubin, or the southern ridges; citizen-science surveys welcome international residents.",
+          "topics": [
+            "environment"
+          ]
         },
         {
           "title": "Donate to regional humanitarian appeals",
-          "description": "Support Singapore Red Cross and Mercy Relief appeals responding to typhoons in the Philippines, earthquakes in Indonesia, or floods in the Mekong region."
+          "description": "Support Singapore Red Cross and Mercy Relief appeals responding to typhoons in the Philippines, earthquakes in Indonesia, or floods in the Mekong region.",
+          "topics": [
+            "disaster-relief",
+            "humanitarian"
+          ]
         },
         {
           "title": "Mentor ASEAN startups and social enterprises",
-          "description": "Offer mentorship or pro-bono consulting to founders from across the region attending Singapore-based accelerators and impact investment programmes."
+          "description": "Offer mentorship or pro-bono consulting to founders from across the region attending Singapore-based accelerators and impact investment programmes.",
+          "topics": [
+            "education",
+            "youth-leadership"
+          ]
         }
       ],
       "ngos": [
@@ -524,32 +897,59 @@
           "name": "Singapore Red Cross",
           "url": "https://www.redcross.sg/",
           "focus": "Humanitarian aid",
-          "verificationStatus": "verified"
+          "verificationStatus": "verified",
+          "topics": [
+            "disaster-relief",
+            "humanitarian"
+          ]
         },
         {
           "name": "Mercy Relief",
           "url": "https://www.mercyrelief.org/",
           "focus": "Disaster response",
-          "verificationStatus": "verified"
+          "verificationStatus": "verified",
+          "topics": [
+            "disaster-relief"
+          ]
         },
         {
           "name": "UNHCR Singapore",
           "url": "https://data.unhcr.org/en/country/sgp",
           "focus": "Refugee protection",
-          "verificationStatus": "verified"
+          "verificationStatus": "verified",
+          "topics": [
+            "humanitarian",
+            "indigenous-communities"
+          ]
         },
         {
           "name": "ASEAN Coordinating Centre for Humanitarian Assistance (AHA Centre)",
           "url": "https://asean.org/our-communities/asean-socio-cultural-community/",
           "focus": "Disaster management",
-          "verificationStatus": "verified"
+          "verificationStatus": "verified",
+          "topics": [
+            "disaster-relief"
+          ]
         }
       ],
-      "relatedCountries": ["malaysia", "indonesia", "brunei"],
+      "relatedCountries": [
+        "malaysia",
+        "indonesia",
+        "brunei"
+      ],
       "sources": [
-        { "label": "UNData Singapore", "url": "https://data.un.org/en/iso/sg.html" },
-        { "label": "World Bank Singapore", "url": "https://data.worldbank.org/country/singapore" },
-        { "label": "ASEAN Member States", "url": "https://asean.org/our-communities/" }
+        {
+          "label": "UNData Singapore",
+          "url": "https://data.un.org/en/iso/sg.html"
+        },
+        {
+          "label": "World Bank Singapore",
+          "url": "https://data.worldbank.org/country/singapore"
+        },
+        {
+          "label": "ASEAN Member States",
+          "url": "https://asean.org/our-communities/"
+        }
       ]
     },
     {
@@ -561,7 +961,9 @@
       "region": "Mainland Southeast Asia",
       "population": 71600000,
       "area_km2": 513120,
-      "languages": ["Thai"],
+      "languages": [
+        "Thai"
+      ],
       "currency": "THB",
       "flagSrc": "/flags/flag-thailand.svg",
       "heroHeadline": "Thailand's smiles anchor regional solidarity and shared hope",
@@ -569,23 +971,42 @@
       "waysToHelp": [
         {
           "title": "Teach English to Myanmar refugees on the border",
-          "description": "Volunteer with community-based organisations in Mae Sot, Mae Hong Son, and Chiang Mai providing education, healthcare, and livelihood training to displaced communities."
+          "description": "Volunteer with community-based organisations in Mae Sot, Mae Hong Son, and Chiang Mai providing education, healthcare, and livelihood training to displaced communities.",
+          "topics": [
+            "education",
+            "health"
+          ]
         },
         {
           "title": "Promote sustainable tourism in coastal provinces",
-          "description": "Support community-based tourism cooperatives in Krabi, Trang, and Koh Lanta that channel visitor revenue into marine conservation and local schools."
+          "description": "Support community-based tourism cooperatives in Krabi, Trang, and Koh Lanta that channel visitor revenue into marine conservation and local schools.",
+          "topics": [
+            "education",
+            "environment"
+          ]
         },
         {
           "title": "Back urban food security programmes",
-          "description": "Volunteer or donate to community kitchens and rooftop garden networks serving low-income Bangkok neighbourhoods, particularly during monsoon disruptions."
+          "description": "Volunteer or donate to community kitchens and rooftop garden networks serving low-income Bangkok neighbourhoods, particularly during monsoon disruptions.",
+          "topics": [
+            "food-security"
+          ]
         },
         {
           "title": "Support Indigenous Karen and Hmong weaving collectives",
-          "description": "Buy fair-trade textiles directly from highland cooperatives; some partner with the UN Social and Economic Commission for Asia and the Pacific (ESCAP)."
+          "description": "Buy fair-trade textiles directly from highland cooperatives; some partner with the UN Social and Economic Commission for Asia and the Pacific (ESCAP).",
+          "topics": [
+            "indigenous-communities",
+            "cultural-heritage"
+          ]
         },
         {
           "title": "Strengthen migrant labour rights",
-          "description": "Volunteer with migrant worker support centres in Bangkok, Samut Sakhon, and Songkhla that provide legal aid and Thai-language classes."
+          "description": "Volunteer with migrant worker support centres in Bangkok, Samut Sakhon, and Songkhla that provide legal aid and Thai-language classes.",
+          "topics": [
+            "cultural-heritage",
+            "humanitarian"
+          ]
         }
       ],
       "ngos": [
@@ -593,32 +1014,60 @@
           "name": "UNHCR Thailand",
           "url": "https://data.unhcr.org/en/country/tha",
           "focus": "Refugee protection",
-          "verificationStatus": "verified"
+          "verificationStatus": "verified",
+          "topics": [
+            "humanitarian",
+            "indigenous-communities"
+          ]
         },
         {
           "name": "CARE Thailand",
           "url": "https://www.care.org/our-work/where-we-work/thailand",
           "focus": "Refugee assistance",
-          "verificationStatus": "verified"
+          "verificationStatus": "verified",
+          "topics": [
+            "humanitarian",
+            "youth-leadership",
+            "women-girls"
+          ]
         },
         {
           "name": "UN OCHA Asia and the Pacific",
           "url": "https://www.unocha.org/asia-and-pacific",
           "focus": "Humanitarian coordination",
-          "verificationStatus": "verified"
+          "verificationStatus": "verified",
+          "topics": [
+            "humanitarian"
+          ]
         },
         {
           "name": "ASEAN Coordinating Centre for Humanitarian Assistance (AHA Centre)",
           "url": "https://asean.org/our-communities/asean-socio-cultural-community/",
           "focus": "Disaster management",
-          "verificationStatus": "verified"
+          "verificationStatus": "verified",
+          "topics": [
+            "disaster-relief"
+          ]
         }
       ],
-      "relatedCountries": ["myanmar", "laos", "cambodia"],
+      "relatedCountries": [
+        "myanmar",
+        "laos",
+        "cambodia"
+      ],
       "sources": [
-        { "label": "UNData Thailand", "url": "https://data.un.org/en/iso/th.html" },
-        { "label": "World Bank Thailand", "url": "https://data.worldbank.org/country/thailand" },
-        { "label": "UNHCR data — Thailand", "url": "https://data.unhcr.org/en/country/tha" }
+        {
+          "label": "UNData Thailand",
+          "url": "https://data.un.org/en/iso/th.html"
+        },
+        {
+          "label": "World Bank Thailand",
+          "url": "https://data.worldbank.org/country/thailand"
+        },
+        {
+          "label": "UNHCR data — Thailand",
+          "url": "https://data.unhcr.org/en/country/tha"
+        }
       ]
     },
     {
@@ -630,7 +1079,9 @@
       "region": "Mainland Southeast Asia",
       "population": 100000000,
       "area_km2": 331212,
-      "languages": ["Vietnamese"],
+      "languages": [
+        "Vietnamese"
+      ],
       "currency": "VND",
       "flagSrc": "/flags/flag-vietnam.svg",
       "heroHeadline": "Modern Vietnam rises through resilience and shared prosperity",
@@ -638,23 +1089,40 @@
       "waysToHelp": [
         {
           "title": "Support Mekong Delta climate adaptation",
-          "description": "Donate to or volunteer with programmes building salinity-resistant housing, mangrove buffers, and resilient livelihoods in coastal communities facing rising seas."
+          "description": "Donate to or volunteer with programmes building salinity-resistant housing, mangrove buffers, and resilient livelihoods in coastal communities facing rising seas.",
+          "topics": [
+            "environment"
+          ]
         },
         {
           "title": "Sponsor ethnic minority scholarships",
-          "description": "Contribute to scholarship programmes supporting Hmong, Dao, Tay, Khmer Krom, and other ethnic minority students to complete secondary and tertiary education."
+          "description": "Contribute to scholarship programmes supporting Hmong, Dao, Tay, Khmer Krom, and other ethnic minority students to complete secondary and tertiary education.",
+          "topics": [
+            "education",
+            "youth-leadership"
+          ]
         },
         {
           "title": "Back disability inclusion for Agent Orange survivors",
-          "description": "Fund assistive devices, vocational training, and accessible community centres serving survivors of dioxin exposure and their children across central Vietnam."
+          "description": "Fund assistive devices, vocational training, and accessible community centres serving survivors of dioxin exposure and their children across central Vietnam.",
+          "topics": [
+            "health"
+          ]
         },
         {
           "title": "Volunteer with wildlife rescue centres",
-          "description": "Support rescue and rehabilitation centres for pangolins, primates, and civets; many accept international volunteers with veterinary or husbandry skills."
+          "description": "Support rescue and rehabilitation centres for pangolins, primates, and civets; many accept international volunteers with veterinary or husbandry skills.",
+          "topics": [
+            "environment"
+          ]
         },
         {
           "title": "Promote fair-trade Vietnamese coffee",
-          "description": "Buy direct from smallholder cooperatives in the Central Highlands; some receive technical assistance from Solidaridad and the IDH Sustainable Trade Initiative."
+          "description": "Buy direct from smallholder cooperatives in the Central Highlands; some receive technical assistance from Solidaridad and the IDH Sustainable Trade Initiative.",
+          "topics": [
+            "education",
+            "youth-leadership"
+          ]
         }
       ],
       "ngos": [
@@ -662,32 +1130,62 @@
           "name": "UNHCR Viet Nam",
           "url": "https://data.unhcr.org/en/country/vnm",
           "focus": "Refugee protection",
-          "verificationStatus": "verified"
+          "verificationStatus": "verified",
+          "topics": [
+            "humanitarian",
+            "indigenous-communities"
+          ]
         },
         {
           "name": "CARE Viet Nam",
           "url": "https://www.care.org/our-work/where-we-work/vietnam",
           "focus": "Climate resilience",
-          "verificationStatus": "verified"
+          "verificationStatus": "verified",
+          "topics": [
+            "environment"
+          ]
         },
         {
           "name": "UN OCHA Asia and the Pacific",
           "url": "https://www.unocha.org/asia-and-pacific",
           "focus": "Humanitarian coordination",
-          "verificationStatus": "verified"
+          "verificationStatus": "verified",
+          "topics": [
+            "humanitarian"
+          ]
         },
         {
           "name": "UNDP Viet Nam",
           "url": "https://www.undp.org/vietnam",
           "focus": "Sustainable development",
-          "verificationStatus": "unverified"
+          "verificationStatus": "unverified",
+          "topics": [
+            "environment",
+            "education",
+            "health",
+            "youth-leadership",
+            "cultural-heritage"
+          ]
         }
       ],
-      "relatedCountries": ["cambodia", "laos", "thailand"],
+      "relatedCountries": [
+        "cambodia",
+        "laos",
+        "thailand"
+      ],
       "sources": [
-        { "label": "UNData Viet Nam", "url": "https://data.un.org/en/iso/vn.html" },
-        { "label": "World Bank Viet Nam", "url": "https://data.worldbank.org/country/viet-nam" },
-        { "label": "UNHCR data — Viet Nam", "url": "https://data.unhcr.org/en/country/vnm" }
+        {
+          "label": "UNData Viet Nam",
+          "url": "https://data.un.org/en/iso/vn.html"
+        },
+        {
+          "label": "World Bank Viet Nam",
+          "url": "https://data.worldbank.org/country/viet-nam"
+        },
+        {
+          "label": "UNHCR data — Viet Nam",
+          "url": "https://data.unhcr.org/en/country/vnm"
+        }
       ]
     }
   ]
