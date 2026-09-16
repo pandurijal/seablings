@@ -1,0 +1,84 @@
+{
+  "topics": [
+    {
+      "id": "education",
+      "name": "Education",
+      "tagline": "Literacy, libraries, scholarships, and digital learning across ASEAN.",
+      "overview": "Across ASEAN, education solidarity takes many forms: rural libraries that bring Khmer-language books to Cambodian children, scholarship funds that send Bruneian students abroad, and digital literacy programmes that prepare young Filipinos and Indonesians for the regional tech economy. Solidarity efforts support teachers, fund scholarships, translate open educational resources, and protect schools as safe community spaces. The strongest education initiatives pair local leadership with cross-border funding — Singapore and Thai founders mentor Lao startups, Malaysian universities host Bruneian students, and Filipino NGOs train Burmese refugees on the Thai border. Education is the connective tissue of every other topic in this solidarity network.",
+      "iconKey": "book-open",
+      "ogImageAlt": "Open book symbolising education and learning across Southeast Asia."
+    },
+    {
+      "id": "environment",
+      "name": "Environment",
+      "tagline": "Forests, oceans, climate adaptation, and conservation across the region.",
+      "overview": "Southeast Asia hosts four of the world's biodiversity hotspots and the planet's third-largest tropical rainforest. Environmental solidarity here spans Heart of Borneo reforestation that crosses the Brunei-Malaysia-Indonesia border, mangrove and coral restoration in the Coral Triangle, and climate adaptation in the Mekong Delta and typhoon-exposed Philippine coastlines. ASEAN environmental work is necessarily transnational: orang-utans ignore borders, river systems ignore capitals, and typhoon tracks ignore politics. Solidarity efforts support Indigenous-led conservation, fund marine protected areas, finance renewable transitions, and amplify frontline community voices. Bangkok's volunteer river-cleanup drives, Hanoi's electric bus corridors, and Brunei's car-free zones show municipal action adds up.",
+      "iconKey": "leaf",
+      "ogImageAlt": "Green leaf symbolising forests and environmental conservation in ASEAN."
+    },
+    {
+      "id": "disaster-relief",
+      "name": "Disaster Relief",
+      "tagline": "Typhoon response, flood recovery, AHA Centre coordination, and preparedness drills.",
+      "overview": "ASEAN sits along the Pacific Ring of Fire and the Western Pacific typhoon belt, exposing most of its population to earthquakes, tsunamis, typhoons, and seasonal flooding. Disaster solidarity is institutionalised: the AHA Centre in Jakarta coordinates cross-border response, the Philippine Red Cross and Malaysian Red Crescent deploy trained volunteers regionally, and Singapore's Mercy Relief operates ASEAN-wide. Disaster relief work covers preparedness drills, immediate search and rescue, shelter and medical care, and long recovery including mental health support. The Mekong region faces chronic flooding while the Philippines and Vietnam face annual typhoons. Solidarity efforts fund emergency supplies, train community responders, support demining, and back regional coordination bodies.",
+      "iconKey": "alert-triangle",
+      "ogImageAlt": "Warning triangle representing disaster response and preparedness efforts."
+    },
+    {
+      "id": "health",
+      "name": "Health",
+      "tagline": "Public health, maternal care, mental health, and rural healthcare access.",
+      "overview": "Health outcomes across ASEAN vary dramatically: Singapore has world-class systems while rural Cambodia, Laos, and Myanmar struggle with basic maternal and child healthcare. Health solidarity spans urban-rural divides and language barriers. Priority areas include maternal and child health, communicable disease surveillance (malaria, dengue), non-communicable disease prevention, mental health support for displaced populations, and healthcare worker training. Rural communities — from Borneo highlands to Mekong islands — often depend on mobile clinics run by NGOs and faith-based organisations. Solidarity efforts support medical missions, fund medical equipment, train community health workers, and advocate for equitable pharmaceutical access across the region.",
+      "iconKey": "heart-pulse",
+      "ogImageAlt": "Heart pulse icon representing health and wellbeing initiatives."
+    },
+    {
+      "id": "humanitarian",
+      "name": "Humanitarian",
+      "tagline": "Refugee protection, displacement, cross-border aid, and humanitarian coordination.",
+      "overview": "ASEAN hosts significant displaced populations: Rohingya refugees in Bangladesh-adjacent areas, Myanmar refugees in Thai border camps, asylum seekers in Malaysia and Indonesia, and internally displaced people inside Myanmar. Humanitarian solidarity means protecting people on the move, supporting host communities, and pressing for durable solutions. Major humanitarian actors include UNHCR country offices, the International Red Cross movement, UN OCHA, and ASEAN-coordinated appeals. Humanitarian work spans refugee status determination, shelter and food aid, education in camps, mental health support for trauma survivors, and resettlement advocacy. Solidarity efforts fund humanitarian operations, support refugee self-reliance programmes, train protection monitors, and amplify displaced voices.",
+      "iconKey": "hand-heart",
+      "ogImageAlt": "Hand holding a heart representing humanitarian aid and refugee support."
+    },
+    {
+      "id": "indigenous-communities",
+      "name": "Indigenous Communities",
+      "tagline": "Dayak, Karen, Igorot, hill tribe rights, and ethnic minority solidarity.",
+      "overview": "ASEAN is home to hundreds of Indigenous and ethnic minority communities — Dayak in Borneo, Karen and Shan in Myanmar and Thailand, Igorot and Lumad in the Philippines, Hmong in Laos and Vietnam, Mangyan in Mindoro, and many smaller groups. These communities steward significant forest and watershed territories but face pressures from extractive industries and conservation projects that exclude them. Solidarity work centres Indigenous leadership: community-based conservation, ethnic-language education, traditional knowledge preservation, and advocacy for free, prior, and informed consent. The Seablings approach follows Indigenous organisations themselves — supporting Karen weaving collectives in Thailand, Lumad schools in Mindanao, and Dayak cultural centres in Kalimantan. Indigenous solidarity is also climate solidarity.",
+      "iconKey": "users",
+      "ogImageAlt": "Group of people representing Indigenous communities and ethnic minorities."
+    },
+    {
+      "id": "women-girls",
+      "name": "Women & Girls",
+      "tagline": "Gender equity, women in tech, maternal health, and girls' education.",
+      "overview": "Women across ASEAN navigate vastly different legal and social contexts, from Brunei's conservative Islamic frameworks to Vietnam's strong female labour force participation. Gender solidarity spans economic empowerment (cooperatives, fair-trade fashion, microfinance), girls' education (scholarships, mentorship, school safety), maternal health, ending gender-based violence (shelters, hotlines, legal aid), and women's leadership in politics, business, and peacebuilding. Regional movements amplify Malaysian and Indonesian feminist organising, support Cambodian garment workers' rights, back Filipino women's participation in peace processes, and connect Vietnamese and Thai women leaders across borders. Educated girls become healthier mothers and stronger economic contributors.",
+      "iconKey": "flower-2",
+      "ogImageAlt": "Floral icon symbolising women and girls empowerment across ASEAN."
+    },
+    {
+      "id": "youth-leadership",
+      "name": "Youth Leadership",
+      "tagline": "Civic engagement, digital literacy, mentorship, and student movements.",
+      "overview": "ASEAN is one of the world's youngest regions, with median ages in the mid-twenties across most member states. Youth leadership solidarity focuses on the next generation of organisers, founders, and policy makers. Priority areas include digital literacy and coding education, civic engagement training, mentorship pipelines between ASEAN universities, student-led climate action, and protection of young activists' rights to organise. Lao startup hubs get mentorship from Singapore and Thai founders; Filipino student-led reef restoration projects win regional sustainability awards; Yangon community radio reaches one million listeners through bilingual youth programming. Solidarity efforts fund scholarships, support student exchanges, train young journalists, and back young climate organisers across the region.",
+      "iconKey": "rocket",
+      "ogImageAlt": "Rocket icon symbolising youth leadership and emerging innovation."
+    },
+    {
+      "id": "food-security",
+      "name": "Food Security",
+      "tagline": "Sustainable fisheries, smallholder agriculture, and food sovereignty.",
+      "overview": "ASEAN's food systems support over 650 million people across vastly different contexts: Tonle Sap fishing communities, Gulf of Thailand coastal villages, Mekong Delta rice farmers, Borneo hill rice cultivators, and Philippine coconut smallholders. Food security solidarity spans sustainable fisheries (fighting illegal fishing, supporting small-scale fishers), smallholder agriculture (climate-smart practices, fair-trade certification, direct trade), nutrition (school meal programmes, fortification), and food sovereignty movements led by farmers and Indigenous communities. Climate change is the dominant threat: saltwater intrusion in the Mekong Delta, typhoon damage to Philippine and Vietnamese rice fields, and erratic monsoons across the region. Solidarity efforts fund farmer cooperatives and support climate-resilient crop varieties.",
+      "iconKey": "wheat",
+      "ogImageAlt": "Wheat sheaf representing food security and sustainable agriculture."
+    },
+    {
+      "id": "cultural-heritage",
+      "name": "Cultural Heritage",
+      "tagline": "Language preservation, traditional arts, temples, and oral traditions.",
+      "overview": "ASEAN's cultural heritage ranges from UNESCO World Sites like Angkor and Borobudur to living traditions in every village: Malay batik, Lao silk weaving, Vietnamese water puppetry, Filipino rondalla music, and Khmer classical dance. Cultural heritage solidarity means supporting living traditions, not just preserving artefacts. Priority areas include Indigenous language documentation (Kayah, Hmong, Mangyan, Lumad languages are endangered), traditional craft cooperatives that connect weavers to fair-trade markets, oral history archives, museum partnerships, and protection of heritage sites from illegal trafficking. Solidarity efforts fund translation projects, support artisan cooperatives, train young cultural practitioners, and document traditions before they disappear. Heritage work is also peace work across the region.",
+      "iconKey": "globe",
+      "ogImageAlt": "Globe icon symbolising cultural heritage and regional identity."
+    }
+  ]
+}
