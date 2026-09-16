@@ -62,11 +62,34 @@ export interface NGO {
   url: string;
   focus: string;
   verificationStatus: VerificationStatus;
+  topics: string[];
 }
 
 export interface WayToHelp {
   title: string;
   description: string;
+  topics: string[];
+}
+
+export type TopicId =
+  | "education"
+  | "environment"
+  | "disaster-relief"
+  | "health"
+  | "humanitarian"
+  | "indigenous-communities"
+  | "women-girls"
+  | "youth-leadership"
+  | "food-security"
+  | "cultural-heritage";
+
+export interface NewsItemTopic {
+  country: string;
+  headline: string;
+  source: string;
+  url: string;
+  date: string;
+  topics: string[];
 }
 
 export interface CountrySource {
