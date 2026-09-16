@@ -1,4 +1,5 @@
 import type { Metadata, Viewport } from "next";
+import Script from "next/script";
 import { Inter } from "next/font/google";
 import JsonLd from "@/components/JsonLd";
 import "./globals.css";
@@ -152,6 +153,12 @@ export default function RootLayout({
   return (
     <html lang="en" className={inter.variable}>
       <body className="font-sans antialiased">
+        <Script
+          defer
+          src="https://umami-pr.up.railway.app/script.js"
+          data-website-id="34766f7b-2a52-4fef-b92b-223ba93516e7"
+          strategy="afterInteractive"
+        />
         <JsonLd data={organizationJsonLd} />
         <JsonLd data={websiteJsonLd} />
         {children}
