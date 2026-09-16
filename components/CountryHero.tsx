@@ -1,8 +1,42 @@
 import Image from "next/image";
 import Link from "next/link";
+import {
+  AlertTriangle,
+  BookOpen,
+  Flower2,
+  Globe,
+  HandHeart,
+  HeartPulse,
+  Leaf,
+  Rocket,
+  Users,
+  Wheat,
+} from "lucide-react";
 import type { Country } from "@/types";
 
-export default function CountryHero({ country }: { country: Country }) {
+const TOPIC_ICONS = {
+  "alert-triangle": AlertTriangle,
+  "book-open": BookOpen,
+  "flower-2": Flower2,
+  globe: Globe,
+  "hand-heart": HandHeart,
+  "heart-pulse": HeartPulse,
+  leaf: Leaf,
+  rocket: Rocket,
+  users: Users,
+  wheat: Wheat,
+} as const;
+
+export default function CountryHero({
+  country,
+  topicBadge,
+}: {
+  country: Country;
+  topicBadge?: { name: string; iconKey: string };
+}) {
+  const TopicIcon = topicBadge
+    ? TOPIC_ICONS[topicBadge.iconKey as keyof typeof TOPIC_ICONS]
+    : null;
   return (
     <section
       aria-labelledby="country-hero-heading"
@@ -22,6 +56,14 @@ export default function CountryHero({ country }: { country: Country }) {
           </div>
         </div>
         <div className="min-w-0">
+          {topicBadge && (
+            <span className="inline-flex items-center gap-1.5 rounded-full bg-sea-100/80 text-sea-800 text-xs font-semibold px-3 py-1 ring-1 ring-sea-200 mb-3">
+              {TopicIcon ? (
+                <TopicIcon className="h-3.5 w-3.5" aria-hidden="true" />
+              ) : null}
+              <span>Topic · {topicBadge.name}</span>
+            </span>
+          )}
           <p className="text-xs uppercase tracking-[0.18em] text-sea-600 font-semibold mb-2">
             {country.region} · {country.iso2}
           </p>
