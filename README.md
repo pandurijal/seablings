@@ -96,7 +96,10 @@ npm start
 │   ├── globals.css            # Tailwind directives + custom CSS
 │   ├── manifest.ts            # PWA manifest
 │   ├── robots.ts              # robots.txt
-│   └── sitemap.ts             # sitemap.xml
+│   ├── sitemap.ts             # sitemap.xml
+│   └── country/
+│       ├── [slug]/page.tsx    # Country page (10 ASEAN countries)
+│       └── [slug]/[topic]/page.tsx # Topic page (10 countries × 10 topics = 100 programmatic pages)
 ├── components/                # React components
 │   ├── Hero.tsx               # "use client" — onClick scroll handler
 │   ├── FlagRibbon.tsx         # Scrolling ASEAN flag ribbon
@@ -105,20 +108,36 @@ npm start
 │   ├── Contribute.tsx         # Hosts the submission form
 │   ├── SubmissionForm.tsx     # "use client" — controlled form, posts to /api/submissions
 │   ├── Footer.tsx             # "use client" — Date hydration
-│   └── JsonLd.tsx
+│   ├── TopicOverview.tsx      # Topic-specific overview section (replaces CountryOverview on topic pages)
+│   ├── TopicRelatedCountries.tsx # Cross-country topic cross-links
+│   └── JsonLd/
+│       ├── BreadcrumbList.tsx # 3-level breadcrumb JSON-LD
+│       ├── Country.tsx        # Country page WebPage schema
+│       ├── NGOOrganization.tsx # NGO listing schema
+│       └── TopicPage.tsx      # Topic page WebPage schema
 ├── data/
-│   └── news.json              # 10 curated ASEAN news items
+│   ├── news.json              # 10 curated ASEAN news items (tagged by topic)
+│   └── topics.json            # 10 solidarity topics (id, name, tagline, overview, iconKey)
 ├── db/
 │   └── schema.sql             # Postgres schema — run once in Neon SQL editor
 ├── lib/
-│   └── db.ts                  # Singleton Neon serverless client
+│   ├── db.ts                  # Singleton Neon serverless client
+│   ├── seo.ts                 # buildCountryMetadata + getSiteUrl
+│   ├── topics.ts              # Topic filter/lookup helpers
+│   └── topicSeo.ts            # buildTopicMetadata
 ├── public/flags/              # 10 ASEAN member flag SVGs
+├── scripts/
+│   └── validate-topics.ts     # Build-time guard: every NGO/WayToHelp/news must have valid topic tags
 ├── services/
 │   └── geminiService.ts       # server-only Gemini fetcher
-├── types.ts                   # Shared TypeScript types
+├── types.ts                   # Shared TypeScript types (TopicId union, NGO/WayToHelp with topics[])
 ├── tailwind.config.ts         # sea/kelp palette, animations
 └── next.config.mjs
 ```
+
+## Programmatic SEO: 100 topic pages
+
+The site includes 100 programmatically-generated pages at `/country/[slug]/[topic]` — every combination of the 10 ASEAN countries and 10 solidarity topics (education, environment, disaster-relief, health, humanitarian, indigenous-communities, women-girls, youth-leadership, food-security, cultural-heritage). Each topic page reuses the country page components with topic-aware filtering so NGOs, ways-to-help, and news sections show only items tagged with that topic. Topics are defined in `data/topics.json`; per-item tags live alongside each NGO, way-to-help, and news item in their respective JSON files.
 
 ## Environment variables
 
